@@ -74,7 +74,7 @@ header {
 
 /* main pagina principal */
 main {
-    padding-left: 1rem;
+    padding-left: 0.5rem;
 }
 .barraNav {
     padding-top: 1rem;
@@ -86,13 +86,15 @@ main {
 .barraNav input{
     width: 70%;
 }
+.importantInformation{
+    display: flex;
+}
 .importantInformation div{
     background-color: #4C6793;
     width: 18rem;
     height: 29rem;
-    padding-top: 2rem;
-    margin-top: 1rem;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
 }
 .importantInformation div h3{
     font-family: 'Lora', serif;
@@ -100,7 +102,6 @@ main {
     color: white;
     text-align: center;
     font-size: 2rem; /*tamaño de la letra*/
-    padding: 1rem;
 }
 .importantInformation div img{
     width: 100%;
@@ -506,6 +507,7 @@ footer a img{
     padding-bottom: 10px;
 }
 .boxProd button{
+    color: white;
     background-color: #4C6793;
     padding: 10px;
     border: none;
@@ -593,12 +595,16 @@ footer a img{
 }
 .datosPresu input{
     width: 90%;
+    position: relative;
+    left: 1rem;
 }
 .datosPresu label{
     width: 90%;
 }
 .datosPresu textarea {
     width: 90%;
+    position: relative;
+    left: 1rem;
 
 }
 .pasosReciclado img{
@@ -632,22 +638,77 @@ footer a img{
     padding-top: 10rem;
     font-size: 6rem;
 }
-.sectionCompra h4{
+.sectionCompra h4{/*PRODUCTO PRECIO CANTIDAD*/
     font-family: 'Lora', serif;
-    font-weight: 400;
     font-size:2rem;
     font-weight: 700;
-    padding-left: 1rem;
+    padding-left: 3rem;
     border-bottom: solid black;
     padding-top: 5rem;
 
+
 }
 .sectionCompra th{
-
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    font-size:2rem;
 }
-
+.subTotal {
+    font-family: 'Lora', serif;
+    font-weight: 200;
+    font-size: 1.5rem;
+} 
+.botonContinuar h4{
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem;
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    font-size: 1rem;
+}
+.botonContinuar {
+    background-color: black;
+    border: none;
+}
+.botonContinuar a{
+    text-decoration: none;
+}
 /*pagina solo motores*/
 .categoriaMotores {
     width: 100%;
     background-color: black;
+}
+
+.categoriaMotores h1{
+    color: white;
+    width: 100%;
+    font-family: 'Lora', serif;
+    font-weight: 700; /* grosor letra*/
+    padding-top: 10rem;
+    font-size: 6rem;
+}
+.categoriaMotores img{
+    width: 20%;
+    height: 30rem;
+}
+
+.products img{
+    width: 15%;
+    height: 15rem;
+}
+.descriptionProd {
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Lora', serif;
+    padding-bottom: 10px;
+}
+.cajaProd button{
+    background-color: #4C6793;
+    border: none;
+}
+.cajaProd h5 {
+    color: white;
+    font-family: 'Lora', serif;
+    font-weight: 700; /* grosor letra*/
+    padding: 1rem;
 }
