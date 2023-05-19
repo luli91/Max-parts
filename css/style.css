@@ -20,27 +20,36 @@ header a{
 }
 header img{
     width: 8rem;
-    padding-left: 1rem;
+    height: 7rem;
+    padding-left: 5px;
 }
 header {
     height: 7rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.headerNav {
+    display: flex; /* indica flexbox*/
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.barraMenu{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none; /*saca los puntitos que aparecen en las listas ul */
 }
 .barraMenu li{
-    padding: 2rem;
-    display: inline; /* los coloca uno al lado del otro*/
+    padding: 1rem;
     font-size: 2rem;
-    position: relative; /* para modificar la ubicacion*//*funciona con los 2 propiedades de abajo*/
-    left: 60rem; /* desde la iz*/
-    bottom: 5rem; /*desde abajo*/
     font-family: 'Lora', serif;
     font-weight: 400;
     font-size: 1.5rem;
 }
 .carritoDeCompras img{
     width: 4rem;
-    position: relative;
-    left: 90rem;
-    bottom: 8rem;
+    height: 40px;
 }
 
 .sectionPrincipal{
@@ -67,9 +76,10 @@ header {
     font-weight: 400;
     font-size: 2rem; /*tamaño de la letra*/
     width: 80%;
-    position: relative;
-    left: 6rem;
-    top: 5rem;
+}
+.subTitulo {
+    display: flex;
+    justify-content: center;
 }
 
 /* main pagina principal */
@@ -78,23 +88,27 @@ main {
 }
 .barraNav {
     padding-top: 1rem;
-    width: 40rem;
-    position: relative; /* para modificar la ubicacion*//*funciona con los 2 propiedades de abajo*/
-    left: 30rem; /* desde la iz*/
-    top: 8rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 .barraNav input{
-    width: 70%;
+    width: 30%;
 }
 .importantInformation{
+    padding-left: 5rem;
+    padding-right: 3rem;
     display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 .importantInformation div{
     background-color: #4C6793;
-    width: 18rem;
-    height: 29rem;
+    width: 16rem;
+    height: 24rem;
     display: flex;
     flex-direction: column;
+
 }
 .importantInformation div h3{
     font-family: 'Lora', serif;
@@ -102,19 +116,23 @@ main {
     color: white;
     text-align: center;
     font-size: 2rem; /*tamaño de la letra*/
+    padding-top: 1rem;
 }
 .importantInformation div img{
     width: 100%;
     height: 20rem;
+    padding-top: 5rem;
 }
 /* secciones con categorias */
-.seccionMotores{ 
+
+.seccionMotores { 
     width: 85%;
     height: 17rem;
     background-color: black;
-    margin: 1rem;
-    position: relative;
-    left: 15rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 15rem;
 }
 .seccionMotores div h2{
     width: 18rem;
@@ -122,27 +140,22 @@ main {
     text-align: center;
     font-family: 'Lora', serif;
     font-size: 2.5rem;
-    position: relative;
-    bottom: 10rem;
-    left: 40rem;
 }
 .seccionMotores img{
-    width: 25%;
+    width: 40%;
     height: 16rem;
     padding-left: 1rem; /*margen izq de la imagen*/
     padding-top: 1.5rem; /*margen de arriba de la imagen*/
 }
 .seccionMotores a button{
     background-color: #4C6793;
-    width: 15%;
     height: 3rem;
     border: none;
-    position: relative;
-    left: 60rem;
-    bottom: 15rem;
 }
 .seccionMotores a h5{
     color: white;
+    padding: 1rem;
+
 }
 
 .seccionPuertas{ 
@@ -157,24 +170,16 @@ main {
     text-align: left;
     font-family: 'Lora', serif;
     font-size: 2.5rem;
-    position: relative;
-    top: 7rem;
 }
 .seccionPuertas img{
     width: 17%;
     height: 16rem;
-    position: relative;
-    left: 65rem;
-    bottom: 6rem;
 }
 .seccionPuertas a button{
     background-color: #4C6793;
     width: 15%;
     height: 3rem;
     border: none;
-    position: relative;
-    left: 25rem;
-    top: 4rem;
 }
 .seccionPuertas a h5{
     color: white;
@@ -186,8 +191,6 @@ main {
     height: 17rem;
     background-color: black;
     margin: 1rem;
-    position: relative;
-    left: 15rem;
 }
 .seccionCapots h2{
     width: 18rem;
@@ -195,9 +198,6 @@ main {
     text-align: center;
     font-family: 'Lora', serif;
     font-size: 2.5rem;
-    position: relative;
-    bottom: 10rem;
-    left: 40rem;
 }
 .seccionCapots img{
     width: 25%;
@@ -210,9 +210,7 @@ main {
     width: 15%;
     height: 3rem;
     border: none;
-    position: relative;
-    left: 60rem;
-    bottom: 12rem;
+
 }
 .seccionCapots a h5{
     color: white;
@@ -231,24 +229,18 @@ main {
     text-align: left;
     font-family: 'Lora', serif;
     font-size: 2.5rem;
-    position: relative;
-    top: 7rem;
 }
 .seccionTapas img{
     width: 17%;
     height: 16rem;
-    position: relative;
-    left: 62rem;
-    bottom: 5rem;
+
 }
 .seccionTapas a button{
     background-color: #4C6793;
     width: 15%;
     height: 3rem;
     border: none;
-    position: relative;
-    left: 25rem;
-    top: 4rem;
+
 }
 .seccionTapas a h5{
     color: white;
@@ -259,8 +251,7 @@ main {
     height: 17rem;
     background-color: black;
     margin: 1rem;
-    position: relative;
-    left: 15rem;
+
 }
 .seccionParagolpes h2{
     width: 18rem;
@@ -268,10 +259,8 @@ main {
     text-align: center;
     font-family: 'Lora', serif;
     font-size: 2.5rem;
-    position: relative;
-    bottom: 10rem;
-    left: 40rem;
 }
+
 .seccionParagolpes img{
     width: 25%;
     height: 16rem;
@@ -283,9 +272,7 @@ main {
     width: 15%;
     height: 3rem;
     border: none;
-    position: relative;
-    left: 62rem;
-    bottom: 12rem;
+
 }
 .seccionParagolpes a h5{
     color: white;
@@ -305,24 +292,17 @@ main {
     text-align: left;
     font-family: 'Lora', serif;
     font-size: 2.5rem;
-    position: relative;
-    top: 7rem;
 }
 .seccionPortones img{
     width: 17%;
     height: 16rem;
-    position: relative;
-    left: 62rem;
-    bottom: 6rem;
 }
 .seccionPortones a button{
     background-color: #4C6793;
     width: 15%;
     height: 3rem;
     border: none;
-    position: relative;
-    left: 25rem;
-    top: 4rem;
+
 }
 
 .seccionPortones a h5{
@@ -332,8 +312,7 @@ main {
 
 .todasMarcas{
     width: 100%;
-    position: relative;
-    left: 5rem;
+
 }
 .todasMarcas h5 {
     font-family: 'Lora', serif;
@@ -359,7 +338,6 @@ footer {
 }
 footer div { /* CADA UNO DE LOS DIVS estan en linea, HORARIO,MEDIOSDEPAGO,CONTACTO,VERMAPA,LOS BOTONES DE REDES */
     margin: 2rem;
-    display: inline-block;
     margin-right: 1rem;
 }
 
@@ -387,9 +365,7 @@ footer div button{
     width: 100%;
     height: 5rem;
     border: none;
-    position: relative;
-    bottom: 5rem;
-    left: 7rem;
+
 }
 footer button h5{
     padding: 1rem;
@@ -397,9 +373,7 @@ footer button h5{
 footer a img{
     width: 15%;
     height: 5rem;
-    position: relative;
-    left: 10rem; 
-    bottom: 3rem;
+
 }
 
 /* pagina 2: TIENDA */
@@ -465,7 +439,6 @@ footer a img{
     font-family: 'Lora', serif;
     font-weight: 400;
     font-size: 1.5rem;
-    display: inline-block;
     margin: 1rem;
 }
 /*FALTA COLOCAR LOS ENLACES PARA PODER FILTRAR PRODUCTOS*/
@@ -474,7 +447,6 @@ footer a img{
     font-family: 'Lora', serif;
     font-weight: 400;
     font-size: 1.5rem;
-    display: inline-block;
     margin: 1rem;
 }
 .ordenarProd{
@@ -485,9 +457,9 @@ footer a img{
 .boxProd {
     background-color: #d9d9d988;
     width: 200px;
-    display: inline-block; /*Coloca los productos uno al lado del otro*/
     margin-inline: 20px;
     height: 300px;
+    box-shadow: 3px 3px 5px grey;
 }
 .boxProd h5 {
     text-align: center;
@@ -540,8 +512,7 @@ footer a img{
     text-align: center;
     font-size: 3rem; /*tamaño de la letra*/
     padding: 1rem;
-    position: relative;
-    top: 5rem;
+
 
 }
 .sectionNos {
@@ -561,17 +532,13 @@ footer a img{
     font-family: 'Lora', serif;
     font-weight: 400;
     font-size: 2rem;
-    position: relative;
-    left: 10rem;
-    top: 10rem;
+
 }
 .presu img{
     width: 20%;
     height: 20rem;
     padding-left: 1rem;
-    position: relative;
-    top: 15rem;
-    left: 10rem;
+
 
 }
 .datosPresu h4{ /*contactenos...*/
@@ -595,29 +562,25 @@ footer a img{
 }
 .datosPresu input{
     width: 90%;
-    position: relative;
-    left: 1rem;
+
 }
 .datosPresu label{
     width: 90%;
 }
 .datosPresu textarea {
     width: 90%;
-    position: relative;
-    left: 1rem;
+
 
 }
 .pasosReciclado img{
     width: 48%;
     height: 50rem;
-    display: inline;
+
 }
 .cuadroPresu {/*cuadro azul con datos*/
     background-color: #4C6793;
     width: 40%;
-    position: relative;
-    left: 40rem;
-    bottom: 15rem;
+
 }
 
 /* pagina 4: CARRITO */
