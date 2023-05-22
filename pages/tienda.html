@@ -17,16 +17,18 @@
             <div>
                 <img src="../assets/img/LOGO.jpeg" alt="logo">
             </div>
-            <div>
-                <nav>
-                    <ul class="barraMenu">
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="../pages/nosotros.html">Nosotros</a></li>
-                    </ul>
-                    <div class="carritoDeCompras">
-                        <a href="../pages/carrito.html"> <img src="../assets/img/carrito-de-compras.png" alt="carrito"></a>
-                    </div>
-                </nav>
+            <div class="headerNav">
+                <div>
+                    <nav>
+                        <ul class="barraMenu">
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="./pages/nosotros.html">Nosotros</a></li>
+                        </ul>
+                    </nav>
+                </div>    
+                <div class="carritoDeCompras">
+                    <a href="./pages/carrito.html"> <img src="../assets/img/carrito2.png" alt="carrito"></a>
+                </div>
             </div>
         </header>
         <main>
@@ -42,7 +44,7 @@
                     <img src="../assets/img/sin-contacto.png" alt="tarjetas">
                 </div>
                 <div>
-                    <h3>EFECTIVO 10% DE DESCUENTO</h3>
+                    <h3>EFECTIVO</h3>
                     <img src="../assets/img/dinero-en-efectivo.png" alt="efectivo">
                 </div>
                 <div>
@@ -58,138 +60,177 @@
                 <div><h4>Completá los datos de tu vehículo para encontrar productos compatibles.
                     Seleccioná los datos de tu vehículo. Si no los sabés, buscálos en el documento de identificación.</h4>
                 </div>
-                <div>Marca</div>
-                <div>Modelo</div>
-                <div>Año</div>
-                <div>Version</div>
-                <div>Buscar productos</div>
-            </section>
-            <section class="filtros"> <!--esta seccion es para los filtros-->
-                <div>
-                    <h4>CATEGORIAS</h4>
-                    <ul>
-                        <li>Motores completos</li>
-                        <li>Capot</li>
-                        <li>Puertas</li>
-                        <li>Tapa de baul </li>
-                        <li>Guadabarro</li>
-                        <li>Porton trasero</li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>MARCAS</h4>
-                    <ul>
-                        <li>Peugeot</li>
-                        <li>Honda</li>
-                        <li>Ford</li>
-                        <li>Audi</li>
-                        <li>Chevrolet</li>
-                        <li>Fiat</li>
-                        <li>BMW</li>
-                        <li>Mercedes</li>
-                        <li>Toyota</li>
-                        <li>Citroen</li>
-                        <li>Hiundai</li>
-                        <li>Nissan</li>
-                        <li>Renault</li>
-                        <li>Kia</li>
-                        <li>Mini</li>
-                        <li>Alfa Romeo</li>
-                        <li>Volkswagen</li>
-                    </ul>
+                <div class="filtroBusqueda">
+                    <div>
+                        <label for=""></label>
+                        <input type="search" placeholder="Marca">
+                    </div>
+                    <div>
+                        <label for=""></label>
+                    <input type="search" placeholder="Modelo">
+                    </div>
+                    <div>
+                        <label for=""></label>
+                        <input type="search" placeholder="Año">
+                    </div>
+                    <div>
+                        <label for=""></label>
+                        <input type="search" placeholder="Versión">
+                    </div>
+                    <div><button>Buscar productos</button></div>
                 </div>
             </section>
-            <section class="ordenarProd"> <!-- en esta seccion estan todos los productos mesclados-->
-                <div>
-                    <h5>Ordenar por</h5>
+            <section class="containerTienda">
+                <div class="filtros"> <!--esta seccion es para los filtros-->
+                    <div>
+                        <h4>CATEGORIAS</h4>
+                        <ul>
+                            <li>Motores completos</li>
+                            <li>Capot</li>
+                            <li>Puertas</li>
+                            <li>Tapa de baul </li>
+                            <li>Guadabarro</li>
+                            <li>Porton trasero</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>MARCAS</h4>
+                        <ul>
+                            <li>Peugeot</li>
+                            <li>Honda</li>
+                            <li>Ford</li>
+                            <li>Audi</li>
+                            <li>Chevrolet</li>
+                            <li>Fiat</li>
+                            <li>BMW</li>
+                            <li>Mercedes</li>
+                            <li>Toyota</li>
+                            <li>Citroen</li>
+                            <li>Hiundai</li>
+                            <li>Nissan</li>
+                            <li>Renault</li>
+                            <li>Kia</li>
+                            <li>Mini</li>
+                            <li>Alfa Romeo</li>
+                            <li>Volkswagen</li>
+                        </ul>
+                    </div>
                 </div>
-                <div>
-                    <h5>Menor precio</h5>
-                </div>
-                <div>
-                    <div class="boxProd">
-                        <img src="../assets/img/PuertaDelIzqPeugeot2073p2009.png" alt="puerta">
-                        <h5>Puerta Delantera Izquierda Peugeot 207 3p 2009</h5>
-                        <p>$35.000</p>
-                        <button><h6>AGREGAR AL CARRITO</h6></button>
-                    </div>
-                    <div class="boxProd">
-                        <img src="../assets/img/Puerta-del-izq-fiatMobis5p2018.png" alt="puerta">
-                        <h5>Puerta Delantera Izquierda Fiat Mobi 5p 2018</h5>
-                        <p>$41.197</p>
-                        <button><h6>AGREGAR AL CARRITO</h6></button>
-                    </div>
-                    <div class="boxProd">
-                        <img src="../assets/img/Puerta Del-Izq-Citroenc4-4p2008.png" alt="puerta">
-                        <h5>Puerta Delantera Izquierda Citroen C4 4p 2008</h5>
-                        <p>$42.100</p>
-                        <button><h6>AGREGAR AL CARRITO</h6></button>
-                    </div>
-                    <div class="boxProd">
-                        <img src="../assets/img/ParagolpeDelFordF100_92-96.png" alt="paragolpe">
-                        <h5>Paragolpe Delantero Ford F100 92/96</h5>
-                        <p>$41.323</p>
-                        <button><h6>AGREGAR AL CARRITO</h6></button>
-                    </div>
-                    <div class="boxProd">
-                        <img src="../assets/img/ParagolpeDel.chevrolet-s10.png" alt="paragolpe">
-                        <h5>Paragolpe Delantero Chevrolet S10 96/01</h5>
-                        <p>$36.408</p>
-                        <button><h6>AGREGAR AL CARRITO</h6></button>
-                    </div>
-                    <div class="boxProd">
-                        <img class="boxProdImg" src="../assets/img/Paragolpe-del-VWgolTrend-voyage.png" alt="paragolpe">
-                        <h5 class="boxProdTitulo">Paragolpe Del. Vw Gol Trend-Voyage</h5>
-                        <p>$36.400</p>
-                        <button><h6>AGREGAR AL CARRITO</h6></button>
-                    </div>
-                    <div class="boxProd">
-                        <img src="../assets/img/tapaDeBaulToyotaCorolla4p2016.png" alt="tapadebaultoyota">
-                        <h5>Tapa De Baul Toyota Corolla 4p 2016</h5>
-                        <p>$70.000</p>
-                        <button><h6>AGREGAR AL CARRITO</h6></button>
-                    </div>
-                    <div class="boxProd">
-                        <img src="../assets/img/TapaDeBaulCitroenC4-$p2009.png" alt="tapadebaulcitroen">
-                        <h5>Tapa De Baul Citroen C4 4p 2009</h5>
-                        <p>$59.900</p>
-                        <button><h6>AGREGAR AL CARRITO</h6></button>
-                    </div>
-                    <div class="boxProd">
-                        <img src="../assets/img/TapaDeBaulRenaultMEgane4p2010.png" alt="tapadebaulrenault">
-                        <h5>Tapa De Baul Renault Megane 4p 2010</h5>
-                        <p>$32.368</p>
-                        <button><h6>AGREGAR AL CARRITO</h6></button>
-                    </div>
+                <div class="ordenarProd"> <!-- en esta seccion estan todos los productos mesclados-->
+                        <div class="boxProd">
+                            <img src="../assets/img/PuertaDelIzqPeugeot2073p2009.png" alt="puerta">
+                            <h5>Puerta Delantera Izquierda Peugeot 207 3p 2009</h5>
+                            <p>$35.000</p>
+                            <button><h6>AGREGAR AL CARRITO</h6></button>
+                        </div>
+                        <div class="boxProd">
+                            <img src="../assets/img/Puerta-del-izq-fiatMobis5p2018.png" alt="puerta">
+                            <h5>Puerta Delantera Izquierda Fiat Mobi 5p 2018</h5>
+                            <p>$41.197</p>
+                            <button><h6>AGREGAR AL CARRITO</h6></button>
+                        </div>
+                        <div class="boxProd">
+                            <img src="../assets/img/Puerta Del-Izq-Citroenc4-4p2008.png" alt="puerta">
+                            <h5>Puerta Delantera Izquierda Citroen C4 4p 2008</h5>
+                            <p>$42.100</p>
+                            <button><h6>AGREGAR AL CARRITO</h6></button>
+                        </div>
+                        <div class="boxProd">
+                            <img src="../assets/img/Puerta Del-Izq-Citroenc4-4p2008.png" alt="puerta">
+                            <h5>Puerta Delantera Izquierda Citroen C4 4p 2008</h5>
+                            <p>$42.100</p>
+                            <button><h6>AGREGAR AL CARRITO</h6></button>
+                        </div>
+                        <div class="boxProd">
+                            <img src="../assets/img/ParagolpeDelFordF100_92-96.png" alt="paragolpe">
+                            <h5>Paragolpe Delantero Ford F100 92/96</h5>
+                            <p>$41.323</p>
+                            <button><h6>AGREGAR AL CARRITO</h6></button>
+                        </div>
+                        <div class="boxProd">
+                            <img src="../assets/img/ParagolpeDel.chevrolet-s10.png" alt="paragolpe">
+                            <h5>Paragolpe Delantero Chevrolet S10 96/01</h5>
+                            <p>$36.408</p>
+                            <button><h6>AGREGAR AL CARRITO</h6></button>
+                        </div>
+                        <div class="boxProd">
+                            <img class="boxProdImg" src="../assets/img/Paragolpe-del-VWgolTrend-voyage.png" alt="paragolpe">
+                            <h5 class="boxProdTitulo">Paragolpe Del. Vw Gol Trend-Voyage</h5>
+                            <p>$36.400</p>
+                            <button><h6>AGREGAR AL CARRITO</h6></button>
+                        </div>
+                        <div class="boxProd">
+                            <img class="boxProdImg" src="../assets/img/Paragolpe-del-VWgolTrend-voyage.png" alt="paragolpe">
+                            <h5 class="boxProdTitulo">Paragolpe Del. Vw Gol Trend-Voyage</h5>
+                            <p>$36.400</p>
+                            <button><h6>AGREGAR AL CARRITO</h6></button>
+                        </div>
+                        <div class="boxProd">
+                            <img src="../assets/img/tapaDeBaulToyotaCorolla4p2016.png" alt="tapadebaultoyota">
+                            <h5>Tapa De Baul Toyota Corolla 4p 2016</h5>
+                            <p>$70.000</p>
+                            <button><h6>AGREGAR AL CARRITO</h6></button>
+                        </div>
+                        <div class="boxProd">
+                            <img src="../assets/img/TapaDeBaulCitroenC4-$p2009.png" alt="tapadebaulcitroen">
+                            <h5>Tapa De Baul Citroen C4 4p 2009</h5>
+                            <p>$59.900</p>
+                            <button><h6>AGREGAR AL CARRITO</h6></button>
+                        </div>
+                        <div class="boxProd">
+                            <img src="../assets/img/TapaDeBaulRenaultMEgane4p2010.png" alt="tapadebaulrenault">
+                            <h5>Tapa De Baul Renault Megane 4p 2010</h5>
+                            <p>$32.368</p>
+                            <button><h6>AGREGAR AL CARRITO</h6></button>
+                        </div>
+                        <div class="boxProd">
+                            <img src="../assets/img/TapaDeBaulRenaultMEgane4p2010.png" alt="tapadebaulrenault">
+                            <h5>Tapa De Baul Renault Megane 4p 2010</h5>
+                            <p>$32.368</p>
+                            <button><h6>AGREGAR AL CARRITO</h6></button>
+                        </div>
                 </div>
             </section>
         </main>
-        <footer>
-            <div>
-                <h4>HORARIO</h4>
-                <p>Lun - Vie<p>
-                <p>9 a 19 hs</p>
-            </div>
-            <div>
-                <h4>MEDIOS DE PAGO</h4>
-                <p>Tarjetas</p>   
-                <p>Efectivo</p>   
-                <p>Mercadopago</p>   
-                <p>Transferencia</p> 
+        <footer class="pie-de-pagina">
+            <div class="grupo-1"> 
+                <div>
+                    <figure>
+                        <img src="../assets/img/LOGO.jpeg" alt="logoempresa">
+                    </figure>
                 </div>
-            <div>
-                <h4>CONTACTO</h4>
-                <p>1155819975</p> 
-                <p>maxiautomotores@gmail.com</p> 
-                <p>Av. Juan B. Justo 7214. Floresta. CABA</p> 
+                <div>
+                    <h4>HORARIO</h4>
+                    <p>Lun - Vie<p>
+                    <p>9 a 19 hs</p>
+                </div>
+                <div>
+                    <h4>MEDIOS DE PAGO</h4>
+                    <p>Tarjetas</p>   
+                    <p>Efectivo</p>   
+                    <p>Mercadopago</p>   
+                    <p>Transferencia</p> 
+                    </div>
+                <div>
+                    <h4>CONTACTO</h4>
+                    <p>1155819975</p> 
+                    <p>maxiautomotores@gmail.com</p> 
+                    <p>Av. Juan B. Justo 7214. Floresta. CABA</p> 
+                </div>
+                <div>
+                    <button><a href="https://www.google.com/maps/place/Comuna+10,+Av.+Juan+Bautista+Justo+7214,+Buenos+Aires/@-34.6278621,-58.4920698,19z/data=!3m1!4b1!4m6!3m5!1s0x95bcc9c7364a4d31:0x4408c73f2f84cfbf!8m2!3d-34.6278621!4d-58.4920698!16s%2Fg%2F11cs914jfn?hl=es"><h5>VER MAPA</h5></a></button>
+                </div>
+                <div>
+                    <h4>SÍGUENOS</h4>
+                    <div class="redesSociales">
+                        <a href="https://www.facebook.com/" target="_blank"><img src="../assets/img/logoface.png" alt="facebook"></a>
+                        <a href="https://www.instagram.com/" target="_blank"><img src="../assets/img/logoisnta.png" alt="instagram"></a>
+                        <a href="https://web.whatsapp.com/" target="_blank"><img src="../assets/img/logowathsapp.png" alt="wathsapp"></a>
+                    </div>
+                </div>
             </div>
-            <div>
-                <button><a href="https://www.google.com/maps/place/Comuna+10,+Av.+Juan+Bautista+Justo+7214,+Buenos+Aires/@-34.6278621,-58.4920698,19z/data=!3m1!4b1!4m6!3m5!1s0x95bcc9c7364a4d31:0x4408c73f2f84cfbf!8m2!3d-34.6278621!4d-58.4920698!16s%2Fg%2F11cs914jfn?hl=es"><h5>VER MAPA</h5></a></button>
-            </div>
-            <div>
-                <a href="https://www.facebook.com/" target="_blank"><img src="../assets/img/logoface.png" alt="facebook"></a>
-                <a href="https://www.instagram.com/" target="_blank"><img src="../assets/img/logoisnta.png" alt="instagram"></a>
-                <a href="https://web.whatsapp.com/" target="_blank"><img src="../assets/img/logowathsapp.png" alt="wathsapp"></a>
+            <div class="grupo-2">
+                <small>&copy; 2023 <b>MAX PARTS</b> - Todos los derechos Reservados</small>
             </div>
         </footer>
     </div>

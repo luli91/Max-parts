@@ -64,22 +64,24 @@ header {
     color: white;
     width: 100%;
     text-align: center;
+    text-shadow: 3px 3px 5px black;
     font-family: 'Lora', serif;
     font-weight: 700; /* grosor letra*/
     padding-top: 15rem;
-    font-size: 6rem; /*tamaño de la imagen*/
+    font-size: 8rem; /*tamaño de la imagen*/
 } 
 .sectionPrincipal h2{
     background-color: rgba(255, 255, 255, 0.603);
     text-align: center;
     font-family: 'Lora', serif;
     font-weight: 400;
-    font-size: 2rem; /*tamaño de la letra*/
+    font-size: 3rem; /*tamaño de la letra*/
     width: 80%;
 }
 .subTitulo {
     display: flex;
     justify-content: center;
+    
 }
 
 /* main pagina principal */
@@ -94,6 +96,13 @@ main {
 }
 .barraNav input{
     width: 30%;
+    border-radius: 6px;     
+    font-family: 'Lora', serif;
+    font-weight: 200;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    border: none;
 }
 .importantInformation{
     padding-left: 5rem;
@@ -106,6 +115,7 @@ main {
     background-color: #4C6793;
     width: 25rem;
     height: 23.5rem;
+    margin-top: 1rem;
     display: flex;
     flex-direction: column;
     box-shadow: 3px 3px 5px grey;
@@ -126,30 +136,35 @@ main {
     object-fit: cover;
 }
 /* secciones con categorias */
-
-.seccionMotores { 
+.contenedorSecciones {
     width: 85%;
-    height: 17rem;
+    display: flex;
+    flex-direction: column;
+}
+.seccionMotores { 
+    width: 100%;
+    height: 20rem;
     background-color: black;
     margin-top: 1rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-left: 17.5%;
 }
 
-.seccionMotores div h2{
+.seccionMotores h2{
     width: 18rem;
     color: white;
     text-align: center;
     font-family: 'Lora', serif;
-    font-size: 2.5rem;
-    padding-top: 5rem;
+    font-size: 3rem;
+    padding-top: 7rem;
 
 }
 .seccionMotores img{
-    width: 250px;
-    height: 16rem;
-    padding-top: 1.5rem; /*margen de arriba de la imagen*/
+    width: 300px;
+    height: 18rem;
+    padding-top: 2rem; 
     padding-left: 1rem;
     object-fit: cover;
 }
@@ -158,7 +173,7 @@ main {
     height: 3rem;
     border: none;
     margin-right: 3rem;
-    margin-top: 7rem;
+    margin-top: 9rem;
 
 }
 
@@ -170,8 +185,8 @@ main {
 
 
 .seccionPuertas{ 
-    width: 85%;
-    height: 17rem;
+    width: 100%;
+    height: 20rem;
     background-color: black;
     margin-top: 1rem;
     display: flex;
@@ -180,16 +195,16 @@ main {
 
 }
 .seccionPuertas h2{
-    padding-left: 1rem;
+    padding-left: 3rem;
     color: white;
     text-align: left;
     font-family: 'Lora', serif;
-    font-size: 2.5rem;
-    padding-top: 7rem;
+    font-size: 3rem;
+    padding-top: 9rem;
 }
 .seccionPuertas img{
-    width: 250px;
-    height: 16rem;
+    width: 300px;
+    height: 18rem;
     padding-top: 1.5rem; /*margen de arriba de la imagen*/
     padding-right: 1rem;
     object-fit: cover;
@@ -199,7 +214,7 @@ main {
     width: 100%;
     height: 3rem;
     border: none;
-    margin-top: 7rem;
+    margin-top: 9rem;
 }
 .seccionPuertas a h5{
     color: white;
@@ -208,13 +223,14 @@ main {
 
 
 .seccionCapots { 
-    width: 85%;
-    height: 17rem;
+    width: 100%;
+    height: 20rem;
     background-color: black;
     margin-top: 1rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-left: 17.5%;
 
 }
 
@@ -223,13 +239,13 @@ main {
     color: white;
     text-align: center;
     font-family: 'Lora', serif;
-    font-size: 2.5rem;
-    padding-top: 5rem;
+    font-size: 3rem;
+    padding-top: 7rem;
 }
 .seccionCapots img{
-    width: 250px;
-    height: 16rem;
-    padding-top: 1.5rem; /*margen de arriba de la imagen*/
+    width: 300px;
+    height: 18rem;
+    padding-top: 2rem; 
     padding-left: 1rem;
     object-fit: cover;
 }
@@ -248,8 +264,8 @@ main {
 
 
 .seccionTapas { 
-    width: 85%;
-    height: 17rem;
+    width: 100%;
+    height: 20rem;
     background-color: black;
     margin-top: 1rem;
     display: flex;
@@ -257,20 +273,19 @@ main {
     justify-content: space-between;
 }
 .seccionTapas h2{
-    padding-left: 1rem;
+    padding-left: 3rem;
     color: white;
     text-align: left;
     font-family: 'Lora', serif;
-    font-size: 2.5rem;
-    padding-top: 7rem;
+    font-size: 3rem;
+    padding-top: 9rem;
 }
 .seccionTapas img{
-    width: 250px;
-    height: 16rem;
+    width: 300px;
+    height: 18rem;
     padding-top: 1.5rem; /*margen de arriba de la imagen*/
     padding-right: 1rem;
     object-fit: cover;
-
 }
 .seccionTapas a button{
     background-color: #4C6793;
@@ -285,14 +300,15 @@ main {
     padding: 1rem;
 }
 
-.seccionParagolpes div{ 
-    width: 85%;
-    height: 17rem;
+.seccionParagolpes { 
+    width: 100%;
+    height: 20rem;
     background-color: black;
     margin-top: 1rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-left: 17.5%;
 
 }
 .seccionParagolpes div h2{
@@ -300,14 +316,14 @@ main {
     color: white;
     text-align: center;
     font-family: 'Lora', serif;
-    font-size: 2.5rem;
-    padding-top: 5rem;
+    font-size: 3rem;
+    padding-top: 7rem;
 }
 
 .seccionParagolpes img{
-    width: 250px;
-    height: 16rem;
-    padding-top: 1.5rem; /*margen de arriba de la imagen*/
+    width: 300px;
+    height: 18rem;
+    padding-top: 2rem; 
     padding-left: 1rem;
     object-fit: cover;
 }
@@ -325,30 +341,29 @@ main {
 }
 
 
-.seccionPortones div{ 
-    width: 85%;
-    height: 17rem;
+.seccionPortones { 
+    width: 100%;
+    height: 20rem;
     background-color: black;
     margin-top: 1rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.seccionPortones div h2{
-    padding-left: 1rem;
+.seccionPortones h2{
+    padding-left: 3rem;
     color: white;
     text-align: left;
     font-family: 'Lora', serif;
-    font-size: 2.5rem;
-    padding-top: 7rem;
+    font-size: 3rem;
+    padding-top: 9rem;
 }
 .seccionPortones img{
-    width: 250px;
-    height: 16rem;
+    width: 300px;
+    height: 18rem;
     padding-top: 1.5rem; /*margen de arriba de la imagen*/
     padding-right: 1rem;
     object-fit: cover;
-
 }
 .seccionPortones a button{
     background-color: #4C6793;
@@ -356,7 +371,6 @@ main {
     height: 3rem;
     border: none;
     margin-top: 7rem;
-
 }
 
 .seccionPortones a h5{
@@ -370,7 +384,7 @@ main {
     color: black;
     text-align: center;
     font-size: 2rem; /*tamaño de la letra*/
-    padding: 1rem
+    padding-top: 3rem;
 
 }
 .todasMarcas img{
@@ -390,7 +404,6 @@ footer {
     height: 30rem;
     background-color: #8BBCCC;
 }
-
 footer div h4{
     font-family: 'Lora', serif;
     font-weight: 700;
@@ -404,7 +417,6 @@ footer div p{
     text-align: center;
     padding-top: 1rem;
 }
-
 footer div a { /* VER MAPA letra*/
     text-decoration: none;
     color: white
@@ -412,15 +424,12 @@ footer div a { /* VER MAPA letra*/
 footer button h5{ /* VER MAPA*/
     padding: 1rem;
 }
-
 footer div button{ /* boton VER MAPA*/
     background-color: #4C6793;
     width: 100%;
     height: 5rem;
     border: none;
-
 }
-
 .pie-de-pagina .grupo-1 {
     width: 100%;
     height: 30rem;
@@ -430,6 +439,9 @@ footer div button{ /* boton VER MAPA*/
     align-items: center;
 }
 
+.pie-de-pagina .grupo-1 img{
+    border-radius: 65px;
+}
 .redesSociales img{
     width: 50px;
     padding-top: 1rem;
@@ -458,6 +470,7 @@ footer div button{ /* boton VER MAPA*/
 .seccionPrincipalTienda h1{
     color: white;
     width: 100%;
+    text-shadow: 3px 3px 5px black;
     text-align: center;
     font-family: 'Lora', serif;
     font-weight: 700;
@@ -473,9 +486,20 @@ footer div button{ /* boton VER MAPA*/
 }
 
 .mediosDePago {
-    background-color: rgba(0, 0, 0, 0.108);
-    width: 20%;
+    height: 20rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 
+}
+.mediosDePago div { /* los elementos del div estan uno bajo del otro con flez direction column*/
+    background-color: rgba(0, 0, 0, 0.108);
+    width: 30rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 3px 3px 5px grey;
 }
 .mediosDePago div h3{
     color: black;
@@ -483,15 +507,18 @@ footer div button{ /* boton VER MAPA*/
     font-weight: 700;
     font-size: 2rem;
     text-align: center;
+    padding-top: 2rem;
 }
 .mediosDePago img {
     width: 27%;
     height: 6rem;
+    margin-top: 4rem;
 }
 /*ACA FALTA HACER LOS FILTROS DE LA BUSQUEDA RAPIDA*/
 .busquedaRapida {
     background-color: #4C6793;
     width: 75%;
+    margin-left: 10%;
 }
 .busquedaRapida div h4{
     font-family: 'Lora', serif;
@@ -508,49 +535,93 @@ footer div button{ /* boton VER MAPA*/
     font-size: 1.5rem;
     margin: 1rem;
 }
+.filtroBusqueda {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.filtroBusqueda input{
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.filtroBusqueda button{ 
+    color: white;
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    background-color: black;
+    padding: 8px;
+    border-radius: 5px;
+}
 /*FALTA COLOCAR LOS ENLACES PARA PODER FILTRAR PRODUCTOS*/
-.filtros{
+.filtros div{
+    width: 150px;
     color: black;
     font-family: 'Lora', serif;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 1.5rem;
-    margin: 1rem;
+    margin: 2rem;
+    padding-top: 1rem;
+}
+.filtros li{
+    padding-top: 1rem;
 }
 .ordenarProd{
+    width: 100%;
     font-family: 'Lora', serif;
     font-weight: 400;
     font-size: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
+.containerTienda{
+display: flex;
+}
+
 .boxProd {
     background-color: #d9d9d988;
-    width: 200px;
-    margin-inline: 20px;
-    height: 300px;
+    width: 300px;
+    margin: 10px;
+    height: 450px;
+    border-radius: 6px;
     box-shadow: 3px 3px 5px grey;
+    transition: all 400ms ease;
+
+}
+.boxProd:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4) ;
+    transform: translateY(-3%);
 }
 .boxProd h5 {
     text-align: center;
-    font-size: 15px;
+    font-size: 20px;
     font-family: 'Lora', serif;
     padding-bottom: 10px;
 }
 .boxProd img {
-    width: 90%;
+    width: 100%;
     padding: 10px;
+    height: 250px;
+    object-fit: cover;
 }
 .boxProd p{
     font-family: 'Lora', serif;
     font-weight: 700;
     text-align: center;
-    font-size: 20px;
+    font-size: 25px;
     padding-bottom: 10px;
 }
 .boxProd button{
     color: white;
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 15px;
     background-color: #4C6793;
     padding: 10px;
     border: none;
-    margin-left: 4rem;
+    margin-left: 8rem;
+    margin-top: 2rem;
 }
 
 
@@ -566,6 +637,7 @@ footer div button{ /* boton VER MAPA*/
 .sectionPrincipalNos div h1{
     color: white;
     width: 100%;
+    text-shadow: 3px 3px 5px black;
     text-align: center;
     font-family: 'Lora', serif;
     font-weight: 700;
@@ -662,6 +734,7 @@ footer div button{ /* boton VER MAPA*/
 .sectionPrincipalCarrito h1{
     color: white;
     width: 100%;
+    text-shadow: 3px 3px 5px black;
     text-align: center;
     font-family: 'Lora', serif;
     font-weight: 700; /* grosor letra*/
@@ -741,4 +814,82 @@ footer div button{ /* boton VER MAPA*/
     font-family: 'Lora', serif;
     font-weight: 700; /* grosor letra*/
     padding: 1rem;
+}
+
+@media (max-width: 1024px) {
+    .sectionPrincipal h1 {
+        color: white;
+        width: 100%;
+        text-align: center;
+        text-shadow: 3px 3px 5px black;
+        font-family: 'Lora', serif;
+        font-weight: 700; /* grosor letra*/
+        padding-top: 15rem;
+        font-size: 6rem; /*tamaño de la imagen*/
+    }
+    .subTitulo h2{
+        background-color: rgba(255, 255, 255, 0.603);
+        text-align: center;
+        font-family: 'Lora', serif;
+        font-weight: 400;
+        font-size: 2rem;
+    }
+    .barraNav input{
+        width: 30%;
+        border-radius: 6px;     
+        font-family: 'Lora', serif;
+        font-weight: 200;
+        color: white;
+        text-align: center;
+        font-size: 1.5rem;
+        border: none;
+    
+    }
+    .importantInformation {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .importantInformation div{
+        background-color: #4C6793;
+        width: 20%;
+        height: 18rem;
+        margin: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 3px 3px 5px grey;
+    
+    }
+    .importantInformation img{
+        width: 100%;
+        height: 15rem;
+        object-fit: cover;
+    }
+
+    .importantInformation div h3 {
+    font-size: 15px;
+    }
+
+    footer div h4{
+        font-size: 1.5rem;
+    }
+    .pie-de-pagina .grupo-1 {
+        width: 100%;
+        height: 30rem;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+        align-items: center;
+    }
+    .grupo-1 figure img{
+        width: 120px;
+        height: 120px;
+    }
+    .pie-de-pagina .grupo-1 img{
+        border-radius: 65px;
+    }
+
 }
