@@ -54,6 +54,12 @@ header {
     height: 4rem;
     padding: 2px;
 }
+.botonCheck {
+    display: none;
+}
+#check {
+    display: none;
+}
 
 .sectionPrincipal{
     width: 100%; 
@@ -403,7 +409,7 @@ main {
 
 footer {
     width: 100%;
-    height: 30rem;
+    height: 40rem;
     background-color: #8BBCCC;
 }
 footer div h4{
@@ -432,6 +438,7 @@ footer div button{ /* boton VER MAPA*/
     height: 5rem;
     border: none;
 }
+
 .pie-de-pagina .grupo-1 {
     width: 100%;
     height: 30rem;
@@ -467,8 +474,7 @@ footer div button{ /* boton VER MAPA*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding-left: 8rem;
-    padding-right: 8rem;
+
 }
 .seccionPrincipalTienda h1{
     color: white;
@@ -481,6 +487,7 @@ footer div button{ /* boton VER MAPA*/
     font-size: 8rem; /*tamaño de la imagen*/
 } 
 .seccionPrincipalTienda h2{
+    width: 80%;
     background-color: rgba(255, 255, 255, 0.603);
     text-align: center;
     font-family: 'Lora', serif;
@@ -489,7 +496,7 @@ footer div button{ /* boton VER MAPA*/
 }
 
 .mediosDePago {
-    height: 20rem;
+    height:40%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -557,17 +564,19 @@ footer div button{ /* boton VER MAPA*/
     border-radius: 5px;
 }
 /*FALTA COLOCAR LOS ENLACES PARA PODER FILTRAR PRODUCTOS*/
+
 .filtros div{
     width: 150px;
     color: black;
     font-family: 'Lora', serif;
     font-weight: 500;
     font-size: 1.5rem;
-    margin: 2rem;
+    margin: 1rem;
     padding-top: 1rem;
 }
 .filtros li{
     padding-top: 1rem;
+    list-style-type: none;
 }
 .ordenarProd{
     width: 100%;
@@ -575,16 +584,20 @@ footer div button{ /* boton VER MAPA*/
     font-weight: 400;
     font-size: 1.5rem;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+}
+.filtros{
+    width: 11%;
 }
 .containerTienda{
-display: flex;
+    width: 100%;
+    display: flex;
 }
 
 .boxProd {
     background-color: #d9d9d988;
-    width: 300px;
-    margin: 10px;
+    margin: 5px;
+    width: 95%;
     height: 450px;
     border-radius: 6px;
     box-shadow: 3px 3px 5px grey;
@@ -595,6 +608,7 @@ display: flex;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4) ;
     transform: translateY(-3%);
 }
+
 .boxProd h5 {
     text-align: center;
     font-size: 20px;
@@ -621,9 +635,9 @@ display: flex;
     text-align: center;
     font-size: 15px;
     background-color: #4C6793;
-    padding: 10px;
+    padding: 1rem;
     border: none;
-    margin-left: 8rem;
+    margin-left: 25%;
     margin-top: 2rem;
 }
 
@@ -1291,16 +1305,41 @@ display: flex;
         width: 5rem;
         height: 5rem;
         padding-left: 0;
-        }
-        header { /* logo,barra menu y carrito*/
+    }
+    header { /* logo,barra menu y carrito*/
         width: 100%;
         height: 5rem;
         display: flex;
         flex-direction: row;
         justify-content: center;
     
+        }/*
+        .botonCheck {
+            display: block;
         }
-        .carritoDeCompras img{
+        .barraMenu {
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background-color: #4C6793;
+            text-align: center;
+            left: -100%;
+            transition: all .5s;
+        }
+        .barraMenu li {
+            display: block;
+            margin: 50px 0;
+            line-height:  30px;
+
+        }
+        .barraMenu a:hover, li a.active {
+            background: none;
+            color: red;
+        }
+        #check:checked ~ ul{
+            left: 0;
+        }*/
+    .carritoDeCompras img{
             width: 3rem;
             height: 3rem;
             object-fit: cover;
@@ -2252,14 +2291,95 @@ display: flex;
     .containerTienda{
         display: flex;
         flex-direction: column;
-        }
+    }
 }
 
 @media (max-width: 768px){
+
+    .seccionPrincipalTienda h1 {
+        color: white;
+        width: 100%;
+        text-align: center;
+        padding-top: 8rem;
+        font-size: 6rem; /*tamaño de la imagen*/
+    }
+    .mediosDePago {
+    height: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    }
+
     .containerTienda{
         display: flex;
         flex-direction: column;
-        }
+    }
+    .filtros div{
+        margin:1rem;
+    }
+
+    .ordenarProd{
+        width: 100%;
+        font-weight: 400;
+        font-size: 1.6rem;
+        display: grid; 
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .boxProd {
+        background-color: #d9d9d988;
+        margin: 5px;
+        width: 95%;
+        height: 450px;
+        border-radius: 6px;
+        box-shadow: 3px 3px 5px grey;
+        transition: all 400ms ease;
+    }
+
+    .boxProd h5 {
+        font-size: 17px;
+    }
+
+    .boxProd img {
+        width: 100%;
+        padding: 10px;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .boxProd p{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 425px){
+    
+    .seccionPrincipalTienda {
+        padding-left: 0;
+        padding-right: 0;
+        height: 20rem;
+    }
+
+    .seccionPrincipalTienda h1{
+        width: 100%;
+        font-weight: 700; /* grosor letra*/
+        padding-top: 10px;
+        font-size: 4rem; /*tamaño de la letra*/
+    } 
+    .seccionPrincipalTienda h2{
+        font-weight: 200;
+        font-size: 16px; /*tamaño de la letra*/
+        width: 90%;
+        margin-left: 15px;
+    }
+    .mediosDePago {
+        height: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    
+    }
+
     .ordenarProd{
         width: 100%;
         font-family: 'Lora', serif;
@@ -2268,16 +2388,10 @@ display: flex;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
-}
-
-@media (max-width: 425px){
-    .ordenarProd{
-        width: 100%;
-        font-family: 'Lora', serif;
-        font-weight: 400;
-        font-size: 1.5rem;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+    .boxProd {
+        width: 95%;
+        margin: 5px;
+        height: 42rem;
     }
     
 }
@@ -2312,7 +2426,13 @@ display: flex;
         font-weight: 400;
         font-size: 1.5rem;
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(1, 1fr); 
+        justify-items: center;
+    }
+    .boxProd {
+        width: 95%;
+        margin: 5px;
+        height: 42rem;
     }
 
 }
