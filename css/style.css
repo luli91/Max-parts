@@ -529,6 +529,7 @@ footer div button{ /* boton VER MAPA*/
     background-color: #4C6793;
     width: 75%;
     margin-left: 10%;
+    margin-top: 1rem;
 }
 .busquedaRapida div h4{
     font-family: 'Lora', serif;
@@ -538,21 +539,19 @@ footer div button{ /* boton VER MAPA*/
     font-size: 2rem; /*tamaño de la letra*/
     padding: 1rem;
 }
-.busquedaRapida div {
-    color: white;
-    font-family: 'Lora', serif;
-    font-weight: 400;
-    font-size: 1.5rem;
-    margin: 1rem;
-}
+
 .filtroBusqueda {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
 }
 .filtroBusqueda input{
+    width: 25rem;
     padding: 10px;
     border-radius: 6px;
+    margin: 5px;
 }
 
 .filtroBusqueda button{ 
@@ -566,11 +565,10 @@ footer div button{ /* boton VER MAPA*/
 /*FALTA COLOCAR LOS ENLACES PARA PODER FILTRAR PRODUCTOS*/
 
 .filtros div{
-    width: 150px;
     color: black;
     font-family: 'Lora', serif;
-    font-weight: 500;
-    font-size: 1.5rem;
+    font-weight: 400;
+    font-size: 1.6rem;
     margin: 1rem;
     padding-top: 1rem;
 }
@@ -579,15 +577,11 @@ footer div button{ /* boton VER MAPA*/
     list-style-type: none;
 }
 .ordenarProd{
-    width: 100%;
-    font-family: 'Lora', serif;
-    font-weight: 400;
-    font-size: 1.5rem;
     display: grid;
     grid-template-columns: repeat(4, minmax(200px, 1fr));
 }
 .filtros{
-    width: 11%;
+    width: 20%;
 }
 .containerTienda{
     width: 100%;
@@ -596,7 +590,7 @@ footer div button{ /* boton VER MAPA*/
 
 .boxProd {
     background-color: #d9d9d988;
-    margin: 5px;
+    margin-top: 20px;
     width: 95%;
     height: 450px;
     border-radius: 6px;
@@ -633,12 +627,12 @@ footer div button{ /* boton VER MAPA*/
     font-family: 'Lora', serif;
     font-weight: 400;
     text-align: center;
-    font-size: 15px;
+    font-size: 16px;
     background-color: #4C6793;
     padding: 1rem;
     border: none;
     margin-left: 25%;
-    margin-top: 2rem;
+    margin-top: 10%;
 }
 
 
@@ -1380,12 +1374,13 @@ footer div button{ /* boton VER MAPA*/
             padding-left: 0;
             padding-right: 0;
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+
         }
         .importantInformation div{
-            width: 90%;
-            height: 20rem;
+            width: 45%;
+            height: 22.5rem;
             margin-top: 1rem;
         }
         .importantInformation div h3{
@@ -1393,7 +1388,7 @@ footer div button{ /* boton VER MAPA*/
             padding-top: 1rem;
         }
         .importantInformation img{
-            margin-top: 17px;
+            margin-top: 2rem;
             width: 100%;
             height: 148px;
             object-fit: fill;
@@ -1684,12 +1679,12 @@ footer div button{ /* boton VER MAPA*/
             padding-left: 0;
             padding-right: 0;
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
         }
         .importantInformation div{
-            width: 90%;
-            height: 20rem;
+            width: 46%;
+            height: 22rem;
             margin-top: 1rem;
         }
         .importantInformation div h3{
@@ -1984,22 +1979,21 @@ footer div button{ /* boton VER MAPA*/
         padding-left: 0;
         padding-right: 0;
         display: flex;
-        flex-direction: column;
         align-items: center;
     }
     .importantInformation div{
-        width: 90%;
-        height: 20rem;
+        width: 15rem;
+        height: 15rem;
         margin-top: 1rem;
     }
     .importantInformation div h3{
-        font-size: 20px; /*tamaño de la letra*/
+        font-size: 16px; /*tamaño de la letra*/
         padding-top: 1rem;
     }
     .importantInformation img{
-        margin-top: 19px;
+        margin-top: 1rem;
         width: 100%;
-        height: 150px;
+        height: 90px;
         object-fit: fill;
     }
     /* secciones con categorias */
@@ -2252,7 +2246,7 @@ footer div button{ /* boton VER MAPA*/
     
     }
     .mediosDePago {
-        height: 40rem;
+        height: 20%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
@@ -2260,7 +2254,7 @@ footer div button{ /* boton VER MAPA*/
     }
     .mediosDePago div { /* los elementos del div estan uno bajo del otro con flez direction column*/
         background-color: rgba(0, 0, 0, 0.108);
-        width: 30rem;
+        width: 20rem;
         margin-top: 1rem;
         display: flex;
         flex-direction: column;
@@ -2278,19 +2272,39 @@ footer div button{ /* boton VER MAPA*/
     .mediosDePago img {
         width: 27%;
         height: 6rem;
-        margin-top: 4rem;
+        margin-top: 3rem;
+        object-fit: fill;
+    }
+    .filtroBusqueda {
+        display: flex;
+        justify-content: center;
+    }
+    .filtroBusqueda input{
+        width: 18rem; 
     }
     .ordenarProd{
-        width: 100%;
-        font-family: 'Lora', serif;
-        font-weight: 400;
-        font-size: 1.5rem;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
-    .containerTienda{
-        display: flex;
-        flex-direction: column;
+
+    .boxProd {
+        width: 95%;
+        height: 400px;
+    }
+    .boxProd h5 {
+        font-size: 16px;
+        padding: 5px;
+    }
+    .boxProd button{
+        margin-top: 1px;
+    }
+    .boxProd p{
+        font-size: 20px;
+        font-weight: 700;
+        padding-bottom: 10px;
+    }
+    .filtros{
+        width: 15%;
     }
 }
 
@@ -2303,47 +2317,68 @@ footer div button{ /* boton VER MAPA*/
         padding-top: 8rem;
         font-size: 6rem; /*tamaño de la imagen*/
     }
-    .mediosDePago {
-    height: 40%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-
+    .mediosDePago{
+        width: 100%;
+        justify-content: center;
+    }
+    .mediosDePago div {
+        width: 18rem;
+        margin: 5px;
+        
+    }
+    .mediosDePago div h3{
+        font-size: 1.6rem;
+    }
+    .busquedaRapida{
+        width: 85%;
+        margin-left: 5%;
+    }
+    .busquedaRapida div h4{
+        font-size: 1.6rem;
+    }
+    .filtroBusqueda input{
+        width: 15rem;
     }
 
     .containerTienda{
         display: flex;
+        flex-direction: row;
+    }
+    .filtros{
+        width: 15%;
+        display: flex;
         flex-direction: column;
     }
     .filtros div{
-        margin:1rem;
+        margin: 5px;
     }
 
     .ordenarProd{
-        width: 100%;
+        width: 25rem;
         font-weight: 400;
         font-size: 1.6rem;
         display: grid; 
         grid-template-columns: repeat(3, 1fr);
     }
+    .boxProd button {
+    margin-left: 15%;
+    }
     .boxProd {
-        background-color: #d9d9d988;
-        margin: 5px;
-        width: 95%;
-        height: 450px;
-        border-radius: 6px;
-        box-shadow: 3px 3px 5px grey;
-        transition: all 400ms ease;
+        width: 20rem;
+        height: 350px;
+        margin-left: 10px;
     }
 
     .boxProd h5 {
-        font-size: 17px;
+        font-size: 16px;
+        font-weight: 400;
+
     }
 
     .boxProd img {
         width: 100%;
         padding: 10px;
-        height: 250px;
+        height: 200px;
         object-fit: cover;
     }
 
@@ -2386,14 +2421,32 @@ footer div button{ /* boton VER MAPA*/
         font-weight: 400;
         font-size: 1.5rem;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr); 
+        justify-items: center;
     }
     .boxProd {
-        width: 95%;
+        width: 18rem;
         margin: 5px;
-        height: 42rem;
+        height: 32rem;
+
     }
-    
+    .boxProd img {
+        width: 100%;
+        padding-top: 10px;
+        padding-left: 20px;
+        height: 150px;
+        object-fit: cover;
+    }
+
+
+    /*los filtros los tengo que convertir en tipo hamburguesa, por ahora lo desaparezco*/
+    .filtros {
+        width: 1%;
+    }
+    .filtros div{
+        color:white;
+    }
+    /*fin de filtros*/
 }
 @media (max-width: 375px){
     .seccionPrincipalTienda {
@@ -2413,27 +2466,47 @@ footer div button{ /* boton VER MAPA*/
         width: 90%;
         margin-left: 15px;
     }
-    .mediosDePago {
-        height: 50%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
+    .mediosDePago div {
+        width: 45%;
     
+    }
+    .mediosDePago div h3{
+        font-size: 1.6rem;
     }
     .ordenarProd{
         width: 100%;
         font-family: 'Lora', serif;
         font-weight: 400;
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         display: grid;
         grid-template-columns: repeat(1, 1fr); 
-        justify-items: center;
+
     }
     .boxProd {
-        width: 95%;
-        margin: 5px;
-        height: 42rem;
+        width: 90%;
+        margin-top: 10px;
+        height: 20rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
+    .boxProd img {
+        padding-left: 5px;
+        width: 15rem;
+        height: 15rem;
+        object-fit: cover;
+    }
+    .boxProd h5 {
+        width: 15rem;
+        height: 15rem;
+    }
+    .boxProd p {
+        padding-left: 15%;
+    }
+    .boxProd button {
+        margin-bottom: 10px;
+    }
+
 
 }
 @media (max-width: 320px){
@@ -2463,6 +2536,17 @@ footer div button{ /* boton VER MAPA*/
         justify-content: space-evenly;
     
     }
+    .mediosDePago div{
+        width: 45%;
+    }
+    .mediosDePago div h3{
+
+        font-weight: 400;
+        font-size: 1.6rem;
+        text-align: center;
+        padding-top: 2rem;
+    }
+
     .ordenarProd{
         width: 100%;
         font-family: 'Lora', serif;
@@ -2471,5 +2555,16 @@ footer div button{ /* boton VER MAPA*/
         display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
-    
+    .boxProd {
+        height: 20rem;
+    }
+    .boxProd img {
+        width: 13rem;
+        height: 13rem;
+        object-fit: fill;
+    }
+    .boxProd button {
+        padding: 5px;
+        margin-left: 7%;
+    }
 }
