@@ -9,262 +9,258 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <div class="hero">
-        <header>
-            <div>
+    <div>
+        <header> 
+            <div class="logo">
                 <img src="../assets/img/LOGO.jpeg" alt="logo">
             </div>
-            <div>
-                <nav>
-                    <ul class="barraMenu">
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="../pages/nosotros.html">Nosotros</a></li>
-                    </ul>
-                    <div class="carritoDeCompras">
-                        <a href="../pages/carrito.html"> <img src="../assets/img/carrito-de-compras.png" alt="carrito"></a>
-                    </div>
-                </nav>
+            <input type="checkbox" id="nav_check" hidden>
+            <nav>
+                <div class="logo">
+                    <img src="../assets/img/LOGO.jpeg" alt="logo">
+                </div>
+                <ul>
+                    <li>
+                        <a href="../index.html" class="active">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="../pages/tienda.html">Tienda</a>
+                    </li>
+                    <li>
+                        <a href="../pages/nosotros.html">Nosotros</a>
+                    </li>
+                </ul>
+            </nav> 
+            <label for="nav_check" class="hamburguer"> 
+                <div class="menu"></div>  
+                <div class="menu"></div>
+                <div class="menu"></div>
+            </label>
+            <div class="carritoDeCompras">
+                <a href="../pages/carrito.html"> <img src="../assets/img/carrito-compras.png" alt="carrito"></a>
             </div>
         </header>
-        <main class="products">
+        <main>
             <section class="categoriaMotores">
                 <div>
-                    <h1>MOTORES COMPLETOS</h1>
+                    <h1>MOTORES COMPLETOS</h1> 
                     <img src="../assets/img/motorcompletoexplosion.jpg" alt="categoriacomotores">
                 </div>
             </section>
-            <section class="filtros"> <!--esta seccion es para los filtros-->
-                <div>
-                    <h4>MARCA</h4>
-                    <ul>
-                        <!-- FALTARIA AGREGAR LOS LINKS -->
-                        <li>Peugeot</li>
-                        <li>Honda</li>
-                        <li>Ford</li>
-                        <li>Audi</li>
-                        <li>Chevrolet</li>
-                        <li>Fiat</li>
-                        <li>BMW</li>
-                        <li>Mercedes</li>
-                        <li>Toyota</li>
-                        <li>Citroen</li>
-                        <li>Hyundai</li>
-                        <li>Nissan</li>
-                        <li>Renault</li>
-                        <li>Kia</li>
-                        <li>Mini</li>
-                        <li>Alfa Romeo</li>
-                        <li>Volkswagen</li>
-                    </ul>
-                </div>
-                <div>
-                    <!-- FILTRO AÑO -->
-                </div>
-                <div>
-                    <!-- filtro modelo -->
-                </div>
-                <div>
-                    <!-- filtro kilometro -->
-                </div>
-                <div>
-                    <!-- FILTRO tipo de combustible -->
-                </div>
-            </section>
-            <section>
-                <div class="cajaProd">
+            <section class="container">
+                <div class="columnLeft">
                     <img src="../assets/img/motor-peugeot5008.jpg" alt="motorpeugeot">
-                    <div>
-                        <button><h5>AGREGAR AL CARRITO</h5></button>
+                </div>
+                <div class="columnRight">
+                    <h3>MOTOR PEUGEOT 5008</h3>
+                    <div class="description">
+                        <div>
+                            <h4>PRECIO</h4>
+                            <p>$150000</p>
+                        </div>
+                        <div>
+                            <h4>AÑO</h4>
+                            <p>2019</p>
+                        </div>
+                        <div>
+                            <h4>COMBUSTIBLE</h4>
+                            <p>Diésel</p>
+                        </div>
+                        <div>
+                            <h4>KILOMETROS</h4>
+                            <p>68.400</p>
+                        </div>
+                        <div>
+                            <h4>POTENCIAS</h4>
+                            <p>120cv
+                            88kw</p>
+                        </div>
+                        <div>
+                            <h4>CILINDRADA</h4>
+                            <p>1.6</p>
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <!-- aca va el precio -->
-                </div>
-                <div>
-                    <table class="descriptionProd">
-                        <tr>
-                            <th><h3>MOTOR PEUGEOT 5008</h3></th>
-                        </tr>
-                        <tr>
-                            <th>AÑO</th>
-                            <th>COMBUSTIBLE</th>
-                            <th>KILOMETROS</th>
-                            <th>POTENCIAS</th>
-                            <th>CILINDRADA</th>
-                        </tr>
-                        <tr>
-                            <th>2019</th>
-                            <th>Diésel</th>
-                            <th>68.400</th>
-                            <th>120cv
-                                88kw</th>
-                            <th>1.6</th>
-                        </tr>
-                    </table>
+                    <button>COMPRAR</button>
                 </div>
             </section>
-            <section>
-                <div  class="cajaProd">
+            <section class="container">
+                <div class="columnLeft">
                     <img src="../assets/img/motor-bmw-x1-sdrive.jpg" alt="motor">
-                    <div>
-                        <button><h5>AGREGAR AL CARRITO</h5></button>
+                </div>
+                <div class="columnRight">
+                    <h3>MOTOR BMW X1 SDRIVE</h3>
+                    <div class="description">
+                        <div>
+                            <h4>PRECIO</h4>
+                            <p>$150000</p>
+                        </div>
+                        <div>
+                            <h4>AÑO</h4>
+                            <p>2019</p>
+                        </div>
+                        <div>
+                            <h4>COMBUSTIBLE</h4>
+                            <p>Diésel</p>
+                        </div>
+                        <div>
+                            <h4>KILOMETROS</h4>
+                            <p>69.845</p>
+                        </div>
+                        <div>
+                            <h4>POTENCIAS</h4>
+                            <p>150cv
+                            110kw</p>
+                        </div>
+                        <div>
+                            <h4>CILINDRADA</h4>
+                            <p>2.0</p>
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <!-- aca va el precio -->
-                </div>
-                <div>
-                    <table class="descriptionProd">
-                        <tr>
-                            <th><h3>MOTOR BMW X1 SDRIVE</h3></th>
-                        </tr>
-                        <tr>
-                            <th>AÑO</th>
-                            <th>COMBUSTIBLE</th>
-                            <th>KILOMETROS</th>
-                            <th>POTENCIAS</th>
-                            <th>CILINDRADA</th>
-                        </tr>                        <tr>
-                            <th>2019</th>
-                            <th>Diésel</th>
-                            <th>69.845</th>
-                            <th>150cv
-                                110kw</th>
-                            <th>2.0</th>
-                        </tr>
-                    </table>
+                    <button>COMPRAR</button>
                 </div>
             </section>
-            <section>
-                <div  class="cajaProd">
-                    <img src="../assets/img/motor-peugeot-3008.jpg" alt="motor">
-                    <div>
-                        <button><h5>AGREGAR AL CARRITO</h5></button>
+            <section class="container">
+                <div class="columnLeft">
+                    <img src="../assets/img/motor-peugeot-3008.jpg" alt="motor" alt="motor">
+                </div>
+                <div class="columnRight">
+                    <h3>MOTOR PEUGEOT 3008</h3>
+                    <div class="description">
+                        <div>
+                            <h4>PRECIO</h4>
+                            <p>$150000</p>
+                        </div>
+                        <div>
+                            <h4>AÑO</h4>
+                            <p>2013</p>
+                        </div>
+                        <div>
+                            <h4>COMBUSTIBLE</h4>
+                            <p>Diésel</p>
+                        </div>
+                        <div>
+                            <h4>KILOMETROS</h4>
+                            <p>169.970</p>
+                        </div>
+                        <div>
+                            <h4>POTENCIAS</h4>
+                            <p>150cv
+                            110kw</p>
+                        </div>
+                        <div>
+                            <h4>CILINDRADA</h4>
+                            <p>2.0</p>
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <!-- aca va el precio -->
-                </div>
-                <div>
-                    <table class="descriptionProd">
-                        <tr>
-                            <th><h3>MOTOR PEUGEOT 3008</h3></th>
-                        </tr>
-                        <tr>
-                            <th>AÑO</th>
-                            <th>COMBUSTIBLE</th>
-                            <th>KILOMETROS</th>
-                            <th>POTENCIAS</th>
-                            <th>CILINDRADA</th>
-                        </tr>
-                        <tr>
-                            <th>2013</th>
-                            <th>Diésel</th>
-                            <th>169.970</th>
-                            <th>150cv
-                                110kw</th>
-                            <th>2.0</th>
-                        </tr>
-                    </table>
+                    <button>COMPRAR</button>
                 </div>
             </section>
-            <section>
-                <div  class="cajaProd">
+            <section class="container">
+                <div class="columnLeft">
                     <img src="../assets/img/motor-renault-master.jpg" alt="motor">
-                    <div>
-                        <button><h5>AGREGAR AL CARRITO</h5></button>
+                </div>
+                <div class="columnRight">
+                    <h3>MOTOR RENAULT MASTER</h3>
+                    <div class="description">
+                        <div>
+                            <h4>PRECIO</h4>
+                            <p>$150000</p>
+                        </div>
+                        <div>
+                            <h4>AÑO</h4>
+                            <p>2006</p>
+                        </div>
+                        <div>
+                            <h4>COMBUSTIBLE</h4>
+                            <p>Diésel</p>
+                        </div>
+                        <div>
+                            <h4>KILOMETROS</h4>
+                            <p>309.600</p>
+                        </div>
+                        <div>
+                            <h4>POTENCIAS</h4>
+                            <p>114cv
+                            84kw</p>
+                        </div>
+                        <div>
+                            <h4>CILINDRADA</h4>
+                            <p>2.5</p>
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <!-- aca va el precio -->
-                </div>
-                <div>
-                    <table class="descriptionProd">
-                        <tr>
-                            <th><h3>MOTOR RENAULT MASTER</h3></th>
-                        </tr>
-                        <tr>
-                            <th>AÑO</th>
-                            <th>COMBUSTIBLE</th>
-                            <th>KILOMETROS</th>
-                            <th>POTENCIAS</th>
-                            <th>CILINDRADA</th>
-                        </tr>
-                        <tr>
-                            <th>2006</th>
-                            <th>Diésel</th>
-                            <th>309.600</th>
-                            <th>114cv
-                                84kw</th>
-                            <th>2.5</th>
-                        </tr>
-                    </table>
+                    <button>COMPRAR</button>
                 </div>
             </section>
-            <section>
-                <div  class="cajaProd">
+            <section class="container">
+                <div class="columnLeft">
                     <img src="../assets/img/motor-renault-kangoo.jpg" alt="motor">
-                    <div>
-                        <button><h5>AGREGAR AL CARRITO</h5></button>
+                </div>
+                <div class="columnRight">
+                    <h3>MOTOR RENAULT KANGOO</h3>
+                    <div class="description">
+                        <div>
+                            <h4>PRECIO</h4>
+                            <p>$150000</p>
+                        </div>
+                        <div>
+                            <h4>AÑO</h4>
+                            <p>2010</p>
+                        </div>
+                        <div>
+                            <h4>COMBUSTIBLE</h4>
+                            <p>Diésel</p>
+                        </div>
+                        <div>
+                            <h4>KILOMETROS</h4>
+                            <p>168.471</p>
+                        </div>
+                        <div>
+                            <h4>POTENCIAS</h4>
+                            <p>85cv
+                            63kw</p>
+                        </div>
+                        <div>
+                            <h4>CILINDRADA</h4>
+                            <p>1.5</p>
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <!-- aca va el precio -->
-                </div>
-                <div>
-                    <table class="descriptionProd">
-                        <tr>
-                            <th><h3>MOTOR RENAULT KANGOO</h3></th>
-                        </tr>
-                        <tr>
-                            <th>AÑO</th>
-                            <th>COMBUSTIBLE</th>
-                            <th>KILOMETROS</th>
-                            <th>POTENCIAS</th>
-                            <th>CILINDRADA</th>
-                        </tr>
-                        <tr>
-                            <th>2010</th>
-                            <th>Diésel</th>
-                            <th>168.471</th>
-                            <th>85cv
-                                63kw</th>
-                            <th>1.5</th>
-                        </tr>
-                    </table>
+                    <button>COMPRAR</button>
                 </div>
             </section>
-            <section>
-                <div  class="cajaProd">
-                    <img src="../assets/img/motor-audi-a3-sportback.jpg" alt="motor">
-                    <div>
-                        <button><h5>AGREGAR AL CARRITO</h5></button>
+            <section class="container">
+                <div class="columnLeft">
+                    <img class="imgMotor" src="../assets/img/motor-audi-a3-sportback.jpg" alt="motor">
+                </div>
+                <div class="columnRight">
+                    <h3>MOTOR AUDI A3 SPORTBACK</h3>
+                    <div class="description">
+                        <div>
+                            <h4>PRECIO</h4>
+                            <p>$150000</p>
+                        </div>
+                        <div>
+                            <h4>AÑO</h4>
+                            <p>2009</p>
+                        </div>
+                        <div>
+                            <h4>COMBUSTIBLE</h4>
+                            <p>Diésel</p>
+                        </div>
+                        <div>
+                            <h4>KILOMETROS</h4>
+                            <p>189.780</p>
+                        </div>
+                        <div>
+                            <h4>POTENCIAS</h4>
+                            <p>105cv
+                            77kw</p>
+                        </div>
+                        <div>
+                            <h4>CILINDRADA</h4>
+                            <p>1.9</p>
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <!-- aca va el precio -->
-                </div>
-                <div>
-                    <table class="descriptionProd">
-                        <tr>
-                            <th><h3>MOTOR AUDI A3 SPORTBACK</h3></th>
-                        </tr>
-                        <tr>
-                            <th>AÑO</th>
-                            <th>COMBUSTIBLE</th>
-                            <th>KILOMETROS</th>
-                            <th>POTENCIAS</th>
-                            <th>CILINDRADA</th>
-                        </tr>
-                        <tr>
-                            <th>2009</th>
-                            <th>Diésel</th>
-                            <th>189.780</th>
-                            <th>105cv
-                                77kw</th>
-                            <th>1.9</th>
-                        </tr>
-                    </table>
+                    <button>COMPRAR</button>
                 </div>
             </section>
         </main>

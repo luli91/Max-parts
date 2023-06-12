@@ -9,20 +9,33 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <div">
-        <header>
-            <div>
+    <div>
+        <header> 
+            <div class="logo">
                 <img src="../assets/img/LOGO.jpeg" alt="logo">
             </div>
-            <div>
-                <nav>
-                    <ul class="barraMenu">
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="../pages/tienda.html">Tienda</a></li>
-                        <li><a href="../pages/nosotros.html">Nosotros</a></li>
-                    </ul>
-                </nav>
-            </div>
+            <input type="checkbox" id="nav_check" hidden>
+            <nav>
+                <div class="logo">
+                    <img src="../assets/img/LOGO.jpeg" alt="logo">
+                </div>
+                <ul>
+                    <li>
+                        <a href="../index.html" class="active">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="../pages/tienda.html">Tienda</a>
+                    </li>
+                    <li>
+                        <a href="../pages/nosotros.html">Nosotros</a>
+                    </li>
+                </ul>
+            </nav> 
+            <label for="nav_check" class="hamburguer"> 
+                <div class="menu"></div>  
+                <div class="menu"></div>
+                <div class="menu"></div>
+            </label>
         </header>
         <main>
             <section class="sectionPrincipalCarrito">
@@ -34,28 +47,22 @@
                 <div>
                     <form id="procesar-pago" action="" method="post">
                     <table>
-                            <tr class="sectionCompra">
-                                <th><h4>PRODUCTO</h4></th>
-                                <th><h4>PRECIO</h4></th>
-                                <th><h4>CANTIDAD</h4></th>
-                                <th><h4>SUB-TOTAL</h4></th>
-                                <th><h4>ELIMINAR</h4></th>
-                            </tr>
-                        <tbody>
-                            
-                            <!-- aca falta agregar los productos seleccionados -->
-                        </tbody>
-                        <div>
-                            <tr class="subTotal">
-                                <td><h4>SUB-TOTAL</h4></td>
-                            </tr>
-                            <tr class="subTotal">
-                                <td><h4>ENVIO</h4></td>
-                            </tr>
-                            <tr class="subTotal">
-                                <td><h4>TOTAL</h4></td>
-                            </tr>
-                        </div>
+                        <tr class="sectionCompra">
+                            <th><h4>PRODUCTO</h4></th>
+                            <th><h4>PRECIO</h4></th>
+                            <th><h4>CANTIDAD</h4></th>
+                            <th><h4>SUB-TOTAL</h4></th>
+                            <th><h4>ELIMINAR</h4></th>
+                        </tr>
+                        <tr class="subTotal">
+                            <td><h4>SUB-TOTAL</h4></td>
+                        </tr>
+                        <tr class="subTotal">
+                            <td><h4>ENVIO</h4></td>
+                        </tr>
+                        <tr class="subTotal">
+                            <td><h4>TOTAL</h4></td>
+                        </tr>
                     </table>
                 </div>
                 <div>

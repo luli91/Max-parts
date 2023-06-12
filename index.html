@@ -13,33 +13,41 @@
 </head>
 <body>
     <div>
-        <header>
-            <div>
+        <header> 
+            <div class="logo">
                 <img src="./assets/img/LOGO.jpeg" alt="logo">
             </div>
-            <div class="headerNav">
-                <nav>
-                    <input type="checkbox" id="check">
-                    <label for="check" class="botonCheck"> <img src="./assets/img/menu.jpg" alt="menu">
-                    </label>
-                    <ul class="barraMenu">
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="./pages/tienda.html">Tienda</a></li>
-                        <li><a href="./pages/nosotros.html">Nosotros</a></li>
-                    </ul>
-                </nav>    
-                <div class="carritoDeCompras">
-                    <a href="./pages/carrito.html"> <img src="./assets/img/carrito2.png" alt="carrito"></a>
+            <input type="checkbox" id="nav_check" hidden>
+            <nav>
+                <div class="logo">
+                    <img src="./assets/img/LOGO.jpeg" alt="logo">
                 </div>
+                <ul>
+                    <li>
+                        <a href="index.html" class="active">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="./pages/tienda.html">Tienda</a>
+                    </li>
+                    <li>
+                        <a href="./pages/nosotros.html">Nosotros</a>
+                    </li>
+                </ul>
+            </nav> 
+            <label for="nav_check" class="hamburguer"> 
+                <div class="menu"></div>  
+                <div class="menu"></div>
+                <div class="menu"></div>
+            </label>
+            <div class="carritoDeCompras">
+                <a href="./pages/carrito.html"> <img src="./assets/img/carrito-compras.png" alt="carrito"></a>
             </div>
         </header>
         <main>
             <section class="sectionPrincipal">
                 <div>
                     <h1>MAXPARTS AUTOPARTES</h1>
-                    <div class="subTitulo">
-                        <h2>VENTA DE REPUESTOS USADOS, RECICLADOS Y AUTORIZADOS</h2>
-                    </div>
+                    <h2>VENTA DE REPUESTOS USADOS, RECICLADOS Y AUTORIZADOS</h2>
                     <div class="barraNav">
                         <form action=""></form>
                         <label for=""></label>
@@ -77,16 +85,28 @@
                     <div> 
                         <h2>MOTORES COMPLETOS</h2>
                     </div>
-                    <div>
-                        <a href="./pages/tienda.html"><button><h5>IR A LA TIENDA</h5></button></a>
+                    <div class="botonTienda">
+                        <a href="./pages/tienda.html">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            IR A LA TIENDA
+                        </a>
                     </div>
                 </div>
                 <div class="seccionPuertas">
                     <div>
                         <h2>PUERTAS</h2>
                     </div>
-                    <div>
-                        <a href="./pages/tienda.html"><button><h5>IR A LA TIENDA</h5></button></a>
+                    <div class="botonTienda">
+                        <a href="./pages/tienda.html">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            IR A LA TIENDA
+                        </a>
                     </div>
                     <div>
                         <img src="./assets/img/CATPUERTAS.jpeg" alt="puerta">
@@ -94,21 +114,33 @@
                 </div>
                 <div class="seccionCapots">
                     <div>
-                        <img src="./assets/img/Rectangle 24.png" alt="capot">
+                        <img src="./assets/img/CATCAPOT.jpeg" alt="capot">
                     </div>
                     <div>
                         <h2>CAPOT</h2>
                     </div>
-                    <div>
-                        <a href="./pages/tienda.html"><button><h5>IR A LA TIENDA</h5></button></a>
+                    <div class="botonTienda">
+                        <a href="./pages/tienda.html">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            IR A LA TIENDA
+                        </a>
                     </div>
                 </div>
                 <div class="seccionTapas">
                     <div>
                         <h2>TAPA DE BAÚL</h2>
                     </div>
-                    <div>
-                        <a href="./pages/tienda.html"><button><h5>IR A LA TIENDA</h5></button></a>
+                    <div class="botonTienda">
+                        <a href="./pages/tienda.html">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            IR A LA TIENDA
+                        </a>
                     </div>
                     <div>
                         <img src="./assets/img/CATtapabaul.jpeg" alt="tapadebaul">
@@ -121,16 +153,28 @@
                     <div>
                         <h2>PARAGOLPES</h2>
                     </div>
-                    <div>
-                        <a href="./pages/tienda.html"><button><h5>IR A LA TIENDA</h5></button></a>
+                    <div class="botonTienda">
+                        <a href="./pages/tienda.html">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            IR A LA TIENDA
+                        </a>
                     </div>
                 </div>
                 <div class="seccionPortones">
                     <div>
                         <h2>PORTÓN TRASERO</h2>
                     </div>
-                    <div>
-                        <a href="./pages/tienda.html"><button><h5>IR A LA TIENDA</h5></button></a>
+                    <div class="botonTienda">
+                        <a href="./pages/tienda.html">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            IR A LA TIENDA
+                        </a>
                     </div>
                     <div>
                         <img src="./assets/img/CATPORTONTRASERO.jpeg" alt="puertatrasera">
@@ -191,15 +235,64 @@
                     <div class="slide">
                         <img src="./assets/img/logvolkswagen.png" alt="logovolkswagen">
                     </div>
+                    <div class="slide">
+                        <img src="./assets/img/logalfa.png" alt="logoalfa">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/img/logaudi.png" alt="logoaudi">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/img/logbmw.png" alt="logobmw">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/img/logchevrolet.png" alt="logochevrolet">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/img/logcitroen.png" alt="logocitroen">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/img/logfiat-1.png" alt="logofiat">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/img/logford.png" alt="logoford">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/img/loghonda.png" alt="logohonda">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/img/loghyundai.png" alt="logohyundai">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/img/logkia.png" alt="logokia">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/img/logmercedes.png" alt="logomercedes">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/img/logmini.png" alt="logomini">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/img/lognissan.png" alt="logonissan">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/img/logpeugeot.png" alt="logopeugeot">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/img/logrenault.png" alt="logorenault">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/img/logtoyota.png" alt="logotoyota">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/img/logvolkswagen.png" alt="logovolkswagen">
+                    </div>
                 </div>
             </section>
         </main>
-        <footer class="pie-de-pagina">
+        <footer>
             <div class="grupo-1"> 
                 <div>
-                    <figure>
                         <img src="./assets/img/LOGO.jpeg" alt="logoempresa">
-                    </figure>
                 </div>
                 <div>
                     <h4>HORARIO</h4>
@@ -222,9 +315,9 @@
                 <div>
                     <button><a href="https://www.google.com/maps/place/Comuna+10,+Av.+Juan+Bautista+Justo+7214,+Buenos+Aires/@-34.6278621,-58.4920698,19z/data=!3m1!4b1!4m6!3m5!1s0x95bcc9c7364a4d31:0x4408c73f2f84cfbf!8m2!3d-34.6278621!4d-58.4920698!16s%2Fg%2F11cs914jfn?hl=es"><h5>VER MAPA</h5></a></button>
                 </div>
-                <div class="redesSociales">
+                <div>
                     <h4>SÍGUENOS</h4>
-                    <div>
+                    <div class="redesSociales">
                         <a href="https://www.facebook.com/" target="_blank"><img src="./assets/img/logoface.png" alt="facebook"></a>
                         <a href="https://www.instagram.com/" target="_blank"><img src="./assets/img/logoisnta.png" alt="instagram"></a>
                         <a href="https://web.whatsapp.com/" target="_blank"><img src="./assets/img/logowathsapp.png" alt="wathsapp"></a>

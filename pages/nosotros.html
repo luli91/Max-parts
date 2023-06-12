@@ -10,59 +10,79 @@
 </head>
 <body>
     <div>
-        <header>
-            <div>
+        <header> 
+            <div class="logo">
                 <img src="../assets/img/LOGO.jpeg" alt="logo">
             </div>
-            <div>
-                <nav>
-                    <ul class="barraMenu">
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="../pages/tienda.html">Tienda</a></li>
-                    </ul>
-                    <div class="carritoDeCompras">
-                        <a href="../pages/carrito.html"> <img src="../assets/img/carrito-de-compras.png" alt="carrito"></a>
-                    </div>
-                </nav>
+            <input type="checkbox" id="nav_check" hidden>
+            <nav>
+                <div class="logo">
+                    <img src="../assets/img/LOGO.jpeg" alt="logo">
+                </div>
+                <ul>
+                    <li>
+                        <a href="../index.html" class="active">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="../pages/tienda.html">Tienda</a>
+                    </li>
+                    <li>
+                        <a href="../pages/nosotros.html">Nosotros</a>
+                    </li>
+                </ul>
+            </nav> 
+            <label for="nav_check" class="hamburguer"> 
+                <div class="menu"></div>  
+                <div class="menu"></div>
+                <div class="menu"></div>
+            </label>
+            <div class="carritoDeCompras">
+                <a href="../pages/carrito.html"> <img src="../assets/img/carrito-compras.png" alt="carrito"></a>
             </div>
         </header>
         <main>
-            <section class="sectionPrincipalNos">
+            <section class="sectionPrinNos">
                 <div>
                     <h1>NOSOTROS</h1>
                 </div>
             </section>
-            <section class="sectionNos">
-                <h2> MAXPARTS autopartes es una tienda online que  ofrece repuestos de automóviles originales usados, reciclado y homologados por el RUDAC (Registro Único de Desarmaderos de Automotores y Actividades Conexas) para todas las marcas y modelos de vehículos. De esta manera, con nuestra actividad somos parte de la reutilización de piezas ayudando al medio ambiente.
-                    Contamos con taller de colocación, somos los pioneros en ofrecer este servicio.</h2>
-            </section>
-            <section class="pasosReciclado">
-                <div>
-                    <img src="../assets/img/Reciclado-de-Autopartes.jpg" alt="pasosparaelrecicladodeautopartes">
-                    <img src="../assets/img/Venta-Legal-de-Autopartes-.jpg" alt="ventaderepuesto">
-                </div>
-            </section>
-            <section class="presu">
-                <div>
-                    <h3>Pedí tu presupuesto sin cargo</h3>
-                    <img src="../assets/img/pedirpresupuesto.jpeg" alt="presupuesto">
+            <section class="allMain">
+                <div class="sectionNos">
+                    <h2>Bienvenidos a nuestra tienda</h2>
+                    <h3><strong> MAXPARTS</strong> autopartes es una tienda online que ofrece repuestos de automóviles originales usados, reciclados y homologados por el RUDAC (Registro Único de Desarmaderos de Automotores y Actividades Conexas). El RUDAC es el organismo que regula la actividad de los desarmaderos de automotores y garantiza la legalidad y calidad de las piezas usadas. De esta manera, con nuestra actividad somos parte de la reutilización de piezas ayudando al medio ambiente.<br> Contamos con taller de colocación, somos los pioneros en ofrecer este servicio. Esto te brinda la comodidad de comprar y colocar tus repuestos en un solo lugar, con la seguridad de que lo harán profesionales capacitados y con el ahorro de tiempo que implica evitar traslados innecesarios.<br>Si quieres conocer más sobre nuestros productos y servicios, visita nuestra página web www.maxparts.com.ar o wathsapp al 1155819975. Estaremos encantados de atenderte y ofrecerte la mejor solución para tu vehículo.</h3>
+                    <img src="../assets/img/comprar-repuestos-autos-autopartes.jpg" alt="repuestosdeautos">
                 </div>
                 <div class="cuadroPresu">
-                    <form action="">
-                        <fieldset>
-                            <div class="datosPresu">
-                                <legend><h4>CONTÁCTENOS PARA PEDIR SU PRESUPUESTO</h4></legend>
-                                <label for="Nombre"><h5>Nombre y Apellido</h5></label>
-                                <input type="text" id="Nombre" placeholder="Ingresa tu nombre y apellido">
-                                <label for="E-mail"><h5>E-mail</h5></label>
-                                <input type="text" id="Email" placeholder="Ingresa tu email">
-                                <label for="mensaje"><h5>Mensaje</h5></label>
-                                <textarea name="message" id="message" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                                <input type="submit" value="Enviar">
+                    <form>
+                        <h4>CONTÁCTENOS PARA PEDIR SU PRESUPUESTO</h4>
+                        <div class="datosPresu">
+                            <label for="name"><h4>Nombre y Apellido</h4></label>
+                            <input type="text" name="name" id="nombre" placeholder="Ingresa tu nombre y apellido">
+                            <label for="phone"><h4>Teléfono</h4></label>
+                            <input type="tel" name="phone" id="phone" placeholder="Ingresá tu nombre y apellido">
+                            <label for="email"><h4>E-mail</h4></label>
+                            <input type="text"name="email" id="Email" placeholder="Ingresá tu email">
+                            <label for="message"><h4>Mensaje</h4></label>
+                            <textarea name="message" id="message" cols="30" rows="5" placeholder="Mensaje"></textarea>
+                            <div class="form-txt">
+                                <a href="#">Politica de privacidad</a>
+                                <a href="#">Terminos y condiciones</a>
                             </div>
-                        </fieldset>
+                            <input class="btn" type="submit" value="Enviar">
+                        </div>
                     </form>
-                </div >
+                </div>
+            </section>
+            <section class="procesoDesarme">
+                <h2>PROCESO DE DESARME</h2>
+                <div class="pasosReciclado">
+                    <div>
+                        <img class="img1" src="../assets/img/Reciclado-de-Autopartes.jpg" alt="pasosparaelrecicladodeautopartes">
+                    </div>
+                    <div>
+                        <img class="img2" src="../assets/img/Venta-Legal-de-Autopartes-.jpg" alt="ventaderepuesto">
+                    </div>
+                </div>
             </section>
         </main>
         <footer class="pie-de-pagina">

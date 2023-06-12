@@ -1,0 +1,48 @@
+@media only screen and (max-width: 768px){
+    header{
+        width: 90%;
+        padding: 0 20px;
+        #nav_check:checked ~ nav {
+            left: 0;
+        }
+        nav{
+            position: absolute;
+            left: -300px;
+            top: 0;
+            z-index: 999;
+            width: 280px;
+            height: 100vh;
+            background-color: $color-principal;
+            transition: 0.2s;
+            box-shadow: 2px 0 20px 0 rgba(0, 0, 0, 0.05);
+            .logo{
+                img{
+                    display: block;
+                    height: 7rem;
+                    display: flex;
+                    align-items: center;
+                    margin-top: 10px;
+                    margin-left: 30px;
+                    border-radius: 45px;
+                }
+            }
+        }
+        nav{
+            ul{
+                display: block;
+                padding: 0 20px;
+                margin-top: 30px;
+                li{
+                    a{
+                        margin-bottom: 5px;
+                        padding: 10px 15px;
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+        .hamburguer {
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,65 @@
+footer {
+    width: 100%;
+    height: 30rem;
+    background-color:$color-secundario;
+    margin-top: 15px;
+    .grupo-1{
+        width: 100%;
+        height: 30rem;
+        display: grid;
+        grid-template-columns: 12% 10% 20% 28% 10% 20%;
+        justify-items: center;
+        align-items: center;
+        img{
+            border-radius: 65px;
+            object-fit: fill;
+            width: 10rem;
+            height: 10rem;
+        }
+        div{
+            h4{
+                font-family: $letra-principal;
+                font-weight: 700;
+                font-size: 20px;
+                text-align: center;
+            }
+            p{
+                font-family: $letra-principal;
+                font-size: 16px;
+                font-weight: 600;
+                text-align: center;
+            }
+        }
+        div{
+            button{ /* boton VER MAPA*/
+                background-color: #4C6793;
+                border: none;
+                border-radius: 6px;
+                a{
+                    text-decoration: none;
+                    h5{
+                        color:white;
+                        font-family: $letra-principal;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+        div{
+            .redesSociales {
+                img{
+                    width: 5rem;
+                    height: 5rem;
+                }
+            }
+        }
+    }
+    .grupo-2 {
+        background-color:$color-copy;
+        text-align: center;
+        font-family: $letra-principal;
+        font-weight: 200;
+        font-size: 16px;
+        width: 100%;
+    }
+}

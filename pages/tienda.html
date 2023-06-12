@@ -13,22 +13,34 @@
 </head>
 <body>
     <div>
-        <header>
-            <div>
+        <header> 
+            <div class="logo">
                 <img src="../assets/img/LOGO.jpeg" alt="logo">
             </div>
-            <div class="headerNav">
-                <div>
-                    <nav>
-                        <ul class="barraMenu">
-                            <li><a href="../index.html">Inicio</a></li>
-                            <li><a href="./pages/nosotros.html">Nosotros</a></li>
-                        </ul>
-                    </nav>
-                </div>    
-                <div class="carritoDeCompras">
-                    <a href="./pages/carrito.html"> <img src="../assets/img/carrito2.png" alt="carrito"></a>
+            <input type="checkbox" id="nav_check" hidden>
+            <nav>
+                <div class="logo">
+                    <img src="../assets/img/LOGO.jpeg" alt="logo">
                 </div>
+                <ul>
+                    <li>
+                        <a href="../index.html" class="active">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="../pages/tienda.html">Tienda</a>
+                    </li>
+                    <li>
+                        <a href="../pages/nosotros.html">Nosotros</a>
+                    </li>
+                </ul>
+            </nav> 
+            <label for="nav_check" class="hamburguer"> 
+                <div class="menu"></div>  
+                <div class="menu"></div>
+                <div class="menu"></div>
+            </label>
+            <div class="carritoDeCompras">
+                <a href="../pages/carrito.html"> <img src="../assets/img/carrito-compras.png" alt="carrito"></a>
             </div>
         </header>
         <main>
@@ -37,6 +49,30 @@
                     <h1>MAXPARTS AUTOPARTES</h1>
                     <div class="subTitulo">
                     <h2>TODOS LOS REPUESTOS ESTAN HOMOLOGADOS POR EL RUDAC </h2></div>
+                </div>
+                <div class="busquedaRapida">
+                    <div><h4>Completá los datos de tu vehículo para encontrar productos compatibles.
+                        Seleccioná los datos de tu vehículo. Si no los sabés, buscálos en el documento de identificación.</h4>
+                    </div>
+                    <div class="filtroBusqueda">
+                        <div>
+                            <label for=""></label>
+                            <input type="search" placeholder="Marca">
+                        </div>
+                        <div>
+                            <label for=""></label>
+                        <input type="search" placeholder="Modelo">
+                        </div>
+                        <div>
+                            <label for=""></label>
+                            <input type="search" placeholder="Año">
+                        </div>
+                        <div>
+                            <label for=""></label>
+                            <input type="search" placeholder="Versión">
+                        </div>
+                        <div><button>Buscar productos</button></div>
+                    </div>
                 </div>
             </section>
             <section class="mediosDePago">
@@ -55,30 +91,6 @@
                 <div>
                     <h3>TRANSFERENCIA BANCARIA</h3>
                     <img src="../assets/img/banco.png" alt="banco">
-                </div>
-            </section>
-            <section class="busquedaRapida">
-                <div><h4>Completá los datos de tu vehículo para encontrar productos compatibles.
-                    Seleccioná los datos de tu vehículo. Si no los sabés, buscálos en el documento de identificación.</h4>
-                </div>
-                <div class="filtroBusqueda">
-                    <div>
-                        <label for=""></label>
-                        <input type="search" placeholder="Marca">
-                    </div>
-                    <div>
-                        <label for=""></label>
-                    <input type="search" placeholder="Modelo">
-                    </div>
-                    <div>
-                        <label for=""></label>
-                        <input type="search" placeholder="Año">
-                    </div>
-                    <div>
-                        <label for=""></label>
-                        <input type="search" placeholder="Versión">
-                    </div>
-                    <div><button>Buscar productos</button></div>
                 </div>
             </section>
             <section class="containerTienda">

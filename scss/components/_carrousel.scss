@@ -1,0 +1,23 @@
+.logosMarcas{
+    @include flex (row,nowrap,center,center,5px);
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 40s linear infinite;
+    width: calc(130px * 34);
+    .slide{
+        width: 130px;
+        img{
+            width: 100%;
+            object-fit: fill;
+        }
+    }
+    @keyframes scroll {
+        0% {
+            -webkit-transform:translateX(0);
+            transform: translateX(0);
+        }
+        100% {
+            -webkit-transform:translateX(calc(-150px * 17));
+            transform: translateX(calc(-150px * 17));
+        }
+    }
+}
