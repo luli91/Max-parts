@@ -87,7 +87,7 @@ main .sectionPrincipal, main .seccionPrincipalTienda {
     /*tamaño de la letra*/
     width: 80%;
     margin-left: 10%; }
-  main .sectionPrincipal div .barraNav input, main .seccionPrincipalTienda div .barraNav input {
+  main .sectionPrincipal div .barraNav input, main .seccionPrincipalTienda div .barraNav input, main .sectionPrincipal div .barraNav .cuadroPresu form .datosPresu textarea, .cuadroPresu form .datosPresu main .sectionPrincipal div .barraNav textarea, main .seccionPrincipalTienda div .barraNav .cuadroPresu form .datosPresu textarea, .cuadroPresu form .datosPresu main .seccionPrincipalTienda div .barraNav textarea {
     width: 50%;
     border-radius: 6px;
     font-family: "Lora", serif;
@@ -368,7 +368,7 @@ main .seccionPrincipalTienda .busquedaRapida {
     gap: 0px;
     margin-bottom: 1rem;
     padding-bottom: 1rem; }
-    main .seccionPrincipalTienda .busquedaRapida .filtroBusqueda input {
+    main .seccionPrincipalTienda .busquedaRapida .filtroBusqueda input, main .seccionPrincipalTienda .busquedaRapida .filtroBusqueda .cuadroPresu form .datosPresu textarea, .cuadroPresu form .datosPresu main .seccionPrincipalTienda .busquedaRapida .filtroBusqueda textarea {
       width: 14rem;
       padding: 10px;
       border-radius: 6px;
@@ -527,6 +527,59 @@ main .containerTienda {
   flex-wrap: nowrap; }
   .procesoDesarme .pasosReciclado div img {
     width: 40rem; }
+
+.cuadroPresu {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 50px; }
+  .cuadroPresu form {
+    padding: 20px 25px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    text-align: center;
+    width: 340px;
+    background-color: #ffffff; }
+    .cuadroPresu form h4 {
+      color: #282f36;
+      font-size: 16px; }
+    .cuadroPresu form .datosPresu {
+      display: flex;
+      flex-direction: column;
+      text-align: left; }
+      .cuadroPresu form .datosPresu label {
+        color: #282f36;
+        font-size: 15px;
+        font-weight: 400; }
+      .cuadroPresu form .datosPresu input, .cuadroPresu form .datosPresu textarea {
+        padding: 17px 25px;
+        border-radius: 25px;
+        background-color: #edfbff;
+        border: 2px solid #f0f7fa;
+        color: #282f36;
+        outline: none; }
+        .cuadroPresu form .datosPresu input::placeholder, .cuadroPresu form .datosPresu textarea::placeholder {
+          color: #b5c3ca; }
+      .cuadroPresu form .datosPresu .form-txt {
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-between;
+        text-align: center; }
+        .cuadroPresu form .datosPresu .form-txt a {
+          color: #769cb2;
+          font-size: 14px;
+          font-weight: 200;
+          text-decoration: none; }
+      .cuadroPresu form .datosPresu .btn {
+        font-size: 16px;
+        color: #ffffff;
+        border: 0;
+        border-radius: 25px;
+        background-color: #4ca5d9;
+        box-shadow: 0 0 20px rgba(0, 174, 254, 0.4); }
+        .cuadroPresu form .datosPresu .btn:hover {
+          background-color: #4bcfe0; }
 
 .sectionPrincipalCarrito {
   width: 100%;

@@ -1,0 +1,66 @@
+.cuadroPresu{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+    form{
+        padding: 20px 25px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        border-radius: 20px;
+        text-align: center;
+        width: 340px;
+        background-color: #ffffff;
+        h4{
+            color: #282f36;
+            font-size: 16px;
+        }
+        .datosPresu{
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            label{
+                color: #282f36;
+                font-size: 15px;
+                font-weight: 400;
+            }
+            input{
+                padding: 17px 25px;
+                border-radius: 25px;
+                background-color: #edfbff;
+                border: 2px solid #f0f7fa;
+                color: #282f36;
+                outline: none;
+                &::placeholder{
+                    color: #b5c3ca;
+                }
+            }
+            textarea{
+                @extend input;
+            }
+            .form-txt{
+                margin-bottom: 30px;
+                display: flex;
+                justify-content: space-between;
+                text-align: center;
+                a{
+                    color:#769cb2;
+                    font-size: 14px;
+                    font-weight: 200;
+                    text-decoration: none;
+                }
+            }
+            .btn{
+                font-size: 16px;
+                color: #ffffff;
+                border: 0;
+                border-radius: 25px;
+                background-color: #4ca5d9;
+                box-shadow: 0 0 20px rgba(0, 174, 254, 0.4);
+                &:hover{
+                    background-color: #4bcfe0;
+                }
+            }
+        }
+    }
+}
