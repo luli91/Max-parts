@@ -24,7 +24,7 @@ main{
             }
         }
         .busquedaRapida {
-            background-color: #4C6793;
+            background-color: $color-principal;
             width: 80%;
             margin-left: 10%;
             margin-top: 1rem;
@@ -99,6 +99,7 @@ main{
                     font-size: 16px;
                 }
                 ul{
+                    padding-left: 5px;
                     li{
                         list-style-type: none;
                         padding-top: 10px;

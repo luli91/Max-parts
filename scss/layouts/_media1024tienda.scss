@@ -1,0 +1,60 @@
+@media only screen and (max-width: 1024px){
+    main{
+        .seccionPrincipalTienda {
+            height: auto;
+            div{
+                h1{
+                    font-size: 5rem;
+                    padding-top: 3rem;
+                }
+                h2{
+                    font-size: 1.6rem;
+                    margin-top: 1rem;
+                }
+            }
+            .busquedaRapida {
+                width: 90%;
+                margin-left: 5%;
+                padding-bottom: 1rem;
+                div{
+                    h4{
+                        font-size: 18px; /*tamaño de la letra*/
+                    }
+                }
+                .filtroBusqueda {
+                    @include flex (row,nowrap,center,center,0px);
+                    input{
+                        width: 9rem;
+                    }
+                }
+            }
+        }
+        .mediosDePago{
+            @include flex (row,nowrap,space-around,center,5px);
+            div{
+                width: 15rem;
+                h3{
+                    font-size: 17px;
+                }
+            }
+        }
+        .containerTienda{
+            .ordenarProd {
+                display: grid;
+                grid-template-columns: repeat(3, minmax(200px, 1fr));
+                .boxProd {
+                    height: 450px;
+                    img{
+                        height: 200px;
+                    }
+                    h5{
+                        font-size: 17px;
+                    }
+                    p{
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

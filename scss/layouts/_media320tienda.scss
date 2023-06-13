@@ -1,0 +1,28 @@
+@media only screen and (max-width: 320px){
+    main{
+        .seccionPrincipalTienda {
+            div{
+                h1{
+                    font-size: 2.5rem;
+                    padding-top: 1rem;
+                }
+            }
+        }
+        .mediosDePago{
+            div{
+                width: 9rem;
+            }
+        }
+        .containerTienda{
+            margin-left: 10%;
+            .ordenarProd {
+                display: flex;
+                flex-direction: column;
+                .boxProd {
+                    width: 230px;
+                    height: 355px;
+                }
+            }
+        }
+    }
+}

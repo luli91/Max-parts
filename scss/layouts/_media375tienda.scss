@@ -1,0 +1,10 @@
+@media only screen and (max-width: 375px){
+    main{
+        .containerTienda{
+            .ordenarProd {
+                display: grid;
+                grid-template-columns: repeat(2, minmax(185px, 1fr));
+            }
+        }
+    }
+}

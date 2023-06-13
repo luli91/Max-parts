@@ -1,0 +1,39 @@
+@media only screen and (max-width: 768px){
+    main{
+        .seccionPrincipalTienda {
+            height: auto;
+            div{
+                h1{
+                    font-size: 4rem;
+                    padding-top: 2rem;
+                }
+                h2{
+                    font-size: 1.3rem;
+                }
+            }
+            .busquedaRapida{
+                div{
+                    h4{
+                        font-size: 16px;
+                    }
+                }
+                .filtroBusqueda{
+                    @include flex (row,wrap,center,center,0px);
+                    input{
+                        width: 8rem;
+                    }
+                }
+            }
+        }
+        .mediosDePago{
+            @include flex (row,wrap,center,center,10px);
+            div{
+                width: 13rem;
+                height: 150px;
+                h3{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
