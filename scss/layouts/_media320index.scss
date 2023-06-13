@@ -1,0 +1,32 @@
+@media only screen and (max-width: 320px){
+    main {
+        .sectionPrincipal{
+            height: 16rem;
+            div{
+                h1{
+                    font-size: 2.5rem;
+                }
+                h2{
+                    font-size: 1rem;
+                    font-weight: 400;
+                    width: 90%;
+                    margin-left: 5%;
+                    margin-top: 1rem;
+                }.barraNav{
+                    input{
+                        width: 70%;
+                        margin-top: 1rem;
+                        font-size: 13px;
+                        margin-left: 15%;
+                    }
+                }
+            }
+        }
+        .importantInformation{
+            div{
+                width: 9rem;
+                height: 10.8rem;
+            }
+        }
+    }
+}

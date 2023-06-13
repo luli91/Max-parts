@@ -1,0 +1,88 @@
+@media only screen and (max-width: 1024px){
+    main{
+        .sectionPrincipal{
+            height: 23rem;
+            div{
+                h1{
+                    font-size: 5rem;
+                    padding-top: 3rem;
+                }
+                h2{
+                    font-size: 1.6rem;
+                    margin-top: 3rem;
+                }
+                .barraNav{
+                    input{
+                        font-size: 1rem;
+                        margin-top: 3rem;
+                    }
+                }
+            }
+        }
+        .importantInformation{
+            div{
+                height: 12%;
+                h3{
+                    font-size: 1.2rem;
+                    margin: 0;
+                    padding-top: 10px;
+                }
+                img{
+                    height: 10rem;
+                    padding-top: 10px;
+                }
+            }
+        }
+        .contenedorSecciones {
+            .seccionMotores {
+                height: 250px;
+                @include flex (row,nowrap,space-between,center,5px);
+                div{
+                    h2{
+                        font-size: 2rem;
+                        margin: 0;
+                    }
+                }
+                div{
+                    img{
+                        width: 250px;
+                        height: 250px;
+                        padding-top: 5px; 
+                        padding-left: 5px;
+                    }
+                }
+            }
+            .seccionPuertas{ 
+                height: 250px;
+                @include flex (row,nowrap,space-between,center,5px);
+                div{
+                    h2{
+                        font-size: 2rem;
+                        margin: 0;
+                    }
+                }
+                div{
+                    img{
+                        width: 240px;
+                        height: 240px;
+                        padding-top: 5px; 
+                        padding-left: 5px;
+                    }
+                }
+            }
+        }
+        .todasMarcas{
+            h5 {
+                font-size: 1.5rem;
+            }
+            .logosMarcas{
+                .slide{
+                    img{
+                        width: 90px;
+                        height: 90px;
+                    }
+                }
+            }
+        }
+    }
+}

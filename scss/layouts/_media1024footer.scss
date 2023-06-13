@@ -1,0 +1,35 @@
+@media only screen and (max-width: 1024px){
+    footer{
+        height: 20rem;
+        .grupo-1{
+            height: 20rem;
+            @include flex (row,nowrap,center,center,25px);
+            img{
+                width: 8rem;
+                height: 8rem;
+            }
+            div{
+                h4{
+                    font-size: 16px;
+                }
+            }
+            div{
+                button{ /* boton VER MAPA*/
+                    a{
+                        h5{
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+            div{
+                .redesSociales {
+                    img{
+                        width: 3.5rem;
+                        height: 3.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
