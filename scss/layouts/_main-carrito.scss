@@ -1,53 +1,126 @@
-.sectionPrincipalCarrito{
-    width: 100%; 
-    height: 300px; 
-    background-image: url("../assets/img/bannerMaxparts.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    h1{
-        color: white;
-        width: 100%;
-        text-shadow: 3px 3px 5px black;
-        text-align: center;
-        font-family: $letra-principal;
-        font-size: 50px;
-        font-weight: 700; /* grosor letra*/
-        padding-top: 7rem;
-    }
-}
-table{
-    width: 100%;
-    .sectionCompra{
-        th{
-            h4{/*PRODUCTO PRECIO CANTIDAD*/
-                font-family: $letra-principal;
-                font-size:20px;
+main{
+    .sectionPrincipalCarrito{
+        width: 100%; 
+        height: 300px; 
+        background-image: url("../assets/img/bannerMaxparts.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        div{
+            h1{
+                color: white;
+                width: 100%;
+                text-shadow: 3px 3px 5px black;
                 text-align: center;
-                font-weight: 700;
-                border-bottom: solid black;
-                padding-top: 10px;  
-                
+                font-family: $letra-principal;
+                font-size: 50px;
+                font-weight: 700; /* grosor letra*/
+                padding-top: 7rem;
+                margin:0;
             }
         }
     }
-    .subTotal{
+    .cuerpoCompra{
         width: 100%;
-        display: flex;
-        justify-content: flex-end;
-        border-bottom: solid black;
+        display: inline-block;
+        gap:10px;
+        .div1{
+            width: 100%;
+            form{
+                table{
+                    width: 100%;
+                    thead{
+                        .sectionCompra{
+                            th{
+                                h4{/*PRODUCTO PRECIO CANTIDAD*/
+                                    font-family: $letra-principal;
+                                    font-size:20px;
+                                    text-align: center;
+                                    font-weight: 700;
+                                    border-bottom: solid black;
+                                    padding-top: 10px;  
+                                    
+                                }
+                            }
+                        }
+                    }
+                    tbody{
+                        tr{
+                            td{
+                                .productoCarrito{
+                                    width: 100px;
+                                    height: 100px;
+                                }
+                            }
+                            td{
+                                h4{
+                                    font-family: $letra-principal;
+                                    font-size: 20px;
+                                }
+                            }
+                            td{
+                                p{
+                                    font-size: 25px;
+                                }
+                            }
+                            td{
+                                div{
+                                    button{
+                                        i{
+                                            img{
+                                                width: 10px;
+                                                height: 10px;
+                                            }
+                                        }
+                                    }
+                                    input{
+                                        width: 20px;
+                                    }
+                                }
+                            }
+                            td{
+                                img{
+                                    width: 30px;
+                                    height: 30px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .div2{
+            height: 12rem;
+            border: solid black;
+            border-radius: 15px;
+            width: 30%;
+            table{
+                tbody{
+                    display: block;
+                    tr{
+                        h3{
+                            font-size: 20px;
+                            font-family: $letra-principal;
+                            padding: 1rem;
+                        }
+                    }
+                }
+            }
+            .botonContinuar {
+                background-color: black;
+                border: none;
+                border-radius: 20px;
+                text-decoration: none;
+                margin-left: 20%;
+                h4{
+                    text-decoration: none;
+                    color: white;
+                    font-family:$letra-principal;
+                    font-weight: 600;
+                    font-size: 14px;
+                    margin: 3px;
+                }
+            }
+        }
     }
 }
-.botonContinuar {
-    background-color: black;
-    border: none;
-    border-radius: 20px;
-    h4{
-        text-decoration: none;
-        color: white;
-        font-family:$letra-principal;
-        font-weight: 600;
-        font-size: 14px;
-    }
-}
-

@@ -43,32 +43,63 @@
                     <h1>CARRITO</h1>
                 </div>
             </section>
-            <section>
-                <div>
-                    <form id="procesar-pago" action="" method="post">
-                    <table>
-                        <tr class="sectionCompra">
-                            <th><h4>PRODUCTO</h4></th>
-                            <th><h4>PRECIO</h4></th>
-                            <th><h4>CANTIDAD</h4></th>
-                            <th><h4>SUB-TOTAL</h4></th>
-                            <th><h4>ELIMINAR</h4></th>
-                        </tr>
-                        <tr class="subTotal">
-                            <td><h4>SUB-TOTAL</h4></td>
-                        </tr>
-                        <tr class="subTotal">
-                            <td><h4>ENVIO</h4></td>
-                        </tr>
-                        <tr class="subTotal">
-                            <td><h4>TOTAL</h4></td>
-                        </tr>
-                    </table>
+            <section class="cuerpoCompra">
+                <div class="div1">
+                    <form>
+                        <table>
+                            <thead>
+                                <tr class="sectionCompra">
+                                    <th><h4>PRODUCTO</h4></th>
+                                    <th><h4>DESCRIPCION</h4></th>
+                                    <th><h4>PRECIO</h4></th>
+                                    <th><h4>CANTIDAD</h4></th>
+                                    <th><h4>ELIMINAR</h4></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img class="productoCarrito" src="../assets/img/motor-peugeot-3008.jpg" alt="producto">
+                                    </td>
+                                    <td>
+                                        <h4>Motor peugeot 3008</h4>
+                                    </td>
+                                    <td>
+                                        <p>$156.036</p>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <button>
+                                                <i>
+                                                    <img src="../assets/img/menos.png" alt="signomenos">
+                                                </i>
+                                            </button>
+                                            <input type="number">
+                                            <button>
+                                                <i>
+                                                    <img src="../assets/img/mas.png" alt="signomas">
+                                                </i>
+                                            </button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <img src="../assets/img/remover-archivo.png" alt="removerproducto">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
                 </div>
-                <div>
+                <div class="div2">
+                    <h2> Total carrito</h2>
+                    <table>
+                        <tbody>
+                            <tr><h3>Subtotal</h3></tr>
+                            <tr><h3>Total</h3></tr>
+                        </tbody>
+                    </table>
                     <button class="botonContinuar"><a href=""><h4>CONTINUAR COMPRA</h4></a></button>
                 </div>
-                </form>
             </section>
         </main>
         <footer class="pie-de-pagina">
