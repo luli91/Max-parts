@@ -1187,3 +1187,79 @@ table {
       main .containerTienda .ordenarProd .boxProd {
         width: 230px;
         height: 355px; } }
+
+@media only screen and (max-width: 1024px) {
+  main .sectionPrinNos {
+    height: 200px; }
+  main .allMain .sectionNos img {
+    width: 25rem;
+    height: 20rem;
+    margin-left: 15%;
+    border-radius: 10px; }
+  main .allMain .cuadroPresu {
+    padding-top: 0;
+    padding-bottom: 0; }
+  main .procesoDesarme .pasosReciclado div img {
+    width: 30rem; } }
+
+@media only screen and (max-width: 768px) {
+  main .allMain .sectionNos {
+    padding: 10px;
+    width: 25rem; }
+    main .allMain .sectionNos img {
+      width: 20rem;
+      height: 15rem;
+      margin-left: 10%; }
+  main .allMain .cuadroPresu {
+    width: 20rem; }
+  main .procesoDesarme .pasosReciclado div img {
+    width: 23rem;
+    object-fit: cover; } }
+
+@media only screen and (max-width: 425px) {
+  .allMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .allMain .sectionNos h3 {
+      font-size: 16px;
+      margin-top: 0; }
+    .allMain .cuadroPresu {
+      margin-right: 0;
+      margin-left: 10%; }
+  .procesoDesarme h2 {
+    font-size: 20px; }
+  .procesoDesarme .pasosReciclado {
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
+
+@media only screen and (max-width: 375px) {
+  main .allMain .sectionNos {
+    width: 20rem; }
+    main .allMain .sectionNos img {
+      width: 15rem;
+      height: 12rem;
+      margin-left: 10%; }
+  main .allMain .cuadroPresu {
+    margin-left: 5%; }
+  main .procesoDesarme .pasosReciclado div img {
+    width: 21rem;
+    object-fit: cover; } }
+
+@media only screen and (max-width: 320px) {
+  main .allMain .sectionNos {
+    width: 18rem; }
+    main .allMain .sectionNos img {
+      width: 15rem;
+      height: 12rem;
+      margin-left: 10%; }
+  main .allMain .cuadroPresu {
+    width: 80%;
+    margin-left: 10%; }
+    main .allMain .cuadroPresu form {
+      width: 100%; }
+  main .procesoDesarme .pasosReciclado div img {
+    width: 19rem; }
+  footer .grupo-1 div figure {
+    margin: 0; } }

@@ -1,0 +1,28 @@
+@media only screen and (max-width: 768px){
+    main{
+        .allMain{
+            .sectionNos {
+                padding: 10px;
+                width: 25rem;
+                img{
+                    width: 20rem;
+                    height: 15rem;
+                    margin-left: 10%;
+                }
+            }
+            .cuadroPresu{
+                width: 20rem;
+            }
+        }
+        .procesoDesarme{
+            .pasosReciclado{
+                div{
+                    img{
+                        width: 23rem;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,30 @@
+@media only screen and (max-width: 1024px){
+    main{
+        .sectionPrinNos {
+            height: 200px;
+        }
+        .allMain{
+            .sectionNos {
+                img{
+                    width: 25rem;
+                    height: 20rem;
+                    margin-left: 15%;
+                    border-radius: 10px;
+                }
+            }
+            .cuadroPresu{
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+        }
+        .procesoDesarme{
+            .pasosReciclado {
+                div{
+                    img{
+                        width: 30rem;
+                    }
+                }
+            }
+        }
+    }
+}
