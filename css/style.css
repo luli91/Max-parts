@@ -695,7 +695,7 @@ table {
       font-size: 20px;
       font-weight: 700;
       color: white;
-      width: 20%;
+      width: 10rem;
       border: none;
       border-radius: 5px;
       margin-left: 40%; }
@@ -1263,3 +1263,104 @@ table {
     width: 19rem; }
   footer .grupo-1 div figure {
     margin: 0; } }
+
+@media only screen and (max-width: 1024px) {
+  .categoriaMotores {
+    /*TITULO*/ }
+    .categoriaMotores div h1 {
+      font-size: 35px; }
+    .categoriaMotores div img {
+      width: 250px;
+      height: 250px; }
+  .container {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 2px;
+    width: 93%;
+    margin-left: 6%; }
+    .container .columnLeft {
+      padding: 5px; }
+      .container .columnLeft img {
+        width: 230px;
+        height: 180px; }
+    .container .columnRight h3 {
+      font-size: 24px; }
+    .container .columnRight .description {
+      gap: 20px; }
+      .container .columnRight .description div h4 {
+        font-size: 17px; }
+      .container .columnRight .description div p {
+        font-size: 17px; }
+    .container .columnRight button {
+      font-size: 16px; } }
+
+@media only screen and (max-width: 768px) {
+  .categoriaMotores {
+    /*TITULO*/ }
+    .categoriaMotores div h1 {
+      font-size: 30px; }
+    .categoriaMotores div img {
+      width: 200px;
+      height: 200px; }
+  .container {
+    gap: 2px;
+    width: 93%;
+    margin-left: 6%; }
+    .container .columnLeft {
+      padding: 5px; }
+      .container .columnLeft img {
+        width: 10rem;
+        height: 9rem; }
+    .container .columnRight {
+      display: flex;
+      justify-content: center; }
+      .container .columnRight h3 {
+        font-size: 20px; }
+      .container .columnRight .description {
+        gap: 15px; }
+        .container .columnRight .description div h4 {
+          font-size: 14px; }
+        .container .columnRight .description div p {
+          font-size: 14px; }
+      .container .columnRight button {
+        font-size: 16px;
+        padding: 2px;
+        margin-left: 20%;
+        margin-bottom: 5px; } }
+
+@media only screen and (max-width: 425px) {
+  .categoriaMotores {
+    /*TITULO*/ }
+    .categoriaMotores div h1 {
+      font-size: 20px; }
+    .categoriaMotores div img {
+      width: 150px;
+      height: 150px;
+      padding-bottom: 5px; }
+  .container {
+    gap: 2px;
+    width: 93%;
+    margin-left: 0%;
+    display: flex;
+    flex-wrap: wrap; }
+    .container .columnLeft {
+      padding: 5px;
+      margin-left: 25%; }
+      .container .columnLeft img {
+        width: 10rem;
+        height: 9rem; }
+    .container .columnRight {
+      margin-left: 10px; }
+      .container .columnRight h3 {
+        font-size: 20px; }
+      .container .columnRight .description {
+        gap: 15px; }
+        .container .columnRight .description div h4 {
+          font-size: 14px; }
+        .container .columnRight .description div p {
+          font-size: 14px; }
+      .container .columnRight button {
+        font-size: 16px;
+        padding: 2px;
+        margin-left: 20%;
+        margin-bottom: 5px; } }

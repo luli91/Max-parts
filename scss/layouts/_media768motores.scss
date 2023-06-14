@@ -1,0 +1,50 @@
+@media only screen and (max-width: 768px){
+    .categoriaMotores { /*TITULO*/
+        div{
+            h1{
+                font-size: 30px;
+            }
+            img{
+                width: 200px;
+                height: 200px;
+            }
+        }
+    }
+    .container{
+        gap:2px;
+        width: 93%;
+        margin-left: 6%;
+        .columnLeft{
+            padding: 5px;
+            img{
+                width: 10rem;
+                height: 9rem;
+            }
+        }
+        .columnRight{
+            display: flex;
+            justify-content: center;
+            h3{
+                font-size: 20px;
+            }
+            .description{
+                gap:15px;
+                div{
+                    h4{
+                        font-size: 14px;
+                    }
+                    p{
+                        font-size: 14px;
+                    }
+                }
+            }
+            button{
+                font-size: 16px;
+                padding: 2px;
+                margin-left: 20%;
+                margin-bottom: 5px;
+
+            }
+        }
+    }
+}
