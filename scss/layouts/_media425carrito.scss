@@ -1,18 +1,93 @@
 @media only screen and (max-width: 425px){
     main{
+        .sectionPrincipalCarrito{
+            margin-top: 5px;
+            height: 200px;
+            div{
+                h1{
+                    font-size: 40px;
+                    padding-top: 4rem;
+                }
+            }
+        }
         .cuerpoCompra{
+            background-color: rgba(126, 143, 151, 0.101);
+            margin-top: 5px;
             .div1{
                 form{
                     table{
-                        display: block;
+                        thead{
+                            display: none;
+                        }
+                        tbody{
+                            tr{
+                                display: flex;
+                                flex-direction: column;
+                                td[data-titulo]::before{
+                                    content: attr( data-titulo);
+                                    padding: 5px;
+                                }
+                                .titulito{
+                                    display: flex;
+                                    flex-direction: column;
+                                    max-width: 100%;
+                                    font-size: 18px;
+                                    font-weight: 700;
+                                    text-align: center;
+                                    border-bottom: solid rgb(184, 176, 176);
+                                    // border-top: double grey;
+                                    // border-left: double grey;
+                                    // border-right: double grey;
+                                    .productoCarrito{
+                                        padding-top: 10px;
+                                        margin-left: 40%;
+                                    }
+                                    div{
+                                        .botonMenos{
+
+                                            margin-top: 10px;
+                                        }
+                                        .botonMas{
+                                            margin-left: 10px;
+                                        }
+                                        input{
+                                            margin-left: 10px;
+                                            height: 20px;
+                                        }
+                                    }
+                                }
+                                .titulitoBoton{
+                                    display: flex;
+                                    flex-direction: column;
+                                    max-width: 100%;
+                                    text-align: center;
+                                    font-size: 18px;
+                                    font-weight: 700;
+                                    border-bottom: solid rgb(184, 176, 176);
+                                    // border: double grey;
+                                    img{
+                                        margin-left: 45%;
+                                        padding-top: 10px;
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
             .div2{
+                margin-left: 2%;
                 height: 14rem;
-                width: 35%;
+                width: 90%;
+                // border: double grey;
+                // border-radius: 0px;
+                padding-left: 5px;
+                padding-right: 10px;
                 .botonContinuar{
                     margin-left: 10%;
+                    a{
+                        text-decoration: none;
+                    }
                 }
             }
         }
