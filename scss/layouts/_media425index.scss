@@ -40,11 +40,13 @@
             }
         }
         .contenedorSecciones {
-            @include flex (column,wrap,center,center,0px);
+            display: block;
+            max-width: 70%;
             .seccionMotores {
                 height: auto;
                 margin-left: 0;
-                @include flex (row,wrap,center,center,0);
+                display: block;
+                padding-left: 43%;
                 div{
                     h2{
                         font-size: 1.2rem;
@@ -66,11 +68,12 @@
             }
             .seccionPuertas{ 
                 height: auto;
-                @include flex (row,wrap,center,center,5px);
+                display: block;
+                padding-left: 43%;
                 div{
                     h2{
                         font-size: 1.2rem;
-                        margin: 0;
+                        padding-left: 10px;
                     }
                 }
                 div{

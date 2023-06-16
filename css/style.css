@@ -1,4 +1,7 @@
 @charset "UTF-8";
+body {
+  margin: 0; }
+
 header {
   display: flex;
   flex-direction: row;
@@ -16,7 +19,7 @@ header {
     width: 5rem;
     height: 5rem;
     object-fit: cover;
-    border-radius: 50px; }
+    border-radius: 30px; }
   header nav .logo img {
     display: none; }
   header nav ul {
@@ -466,6 +469,8 @@ main .containerTienda {
         border: none;
         margin-left: 25%;
         border-radius: 5px; }
+        main .containerTienda .ordenarProd .boxProd button a {
+          text-decoration: none; }
         main .containerTienda .ordenarProd .boxProd button h6 {
           color: white;
           font-family: "Lora", serif;
@@ -818,7 +823,6 @@ main .cuerpoCompra {
 /*MENÚ HAMBURGUESA*/
 @media only screen and (max-width: 768px) {
   header {
-    width: 90%;
     padding: 0 20px; }
     header #nav_check:checked ~ nav {
       left: 0; }
@@ -978,21 +982,13 @@ main .cuerpoCompra {
         height: 7rem;
         margin-top: 0px; }
   main .contenedorSecciones {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 0px; }
+    display: block;
+    max-width: 70%; }
     main .contenedorSecciones .seccionMotores, main .contenedorSecciones .seccionCapots, main .contenedorSecciones .seccionParagolpes {
       height: auto;
       margin-left: 0;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      gap: 0; }
+      display: block;
+      padding-left: 43%; }
       main .contenedorSecciones .seccionMotores div h2, main .contenedorSecciones .seccionCapots div h2, main .contenedorSecciones .seccionParagolpes div h2 {
         font-size: 1.2rem; }
       main .contenedorSecciones .seccionMotores div img, main .contenedorSecciones .seccionCapots div img, main .contenedorSecciones .seccionParagolpes div img {
@@ -1004,15 +1000,11 @@ main .cuerpoCompra {
         font-size: 12px; }
     main .contenedorSecciones .seccionPuertas, main .contenedorSecciones .seccionTapas, main .contenedorSecciones .seccionPortones {
       height: auto;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      gap: 5px; }
+      display: block;
+      padding-left: 43%; }
       main .contenedorSecciones .seccionPuertas div h2, main .contenedorSecciones .seccionTapas div h2, main .contenedorSecciones .seccionPortones div h2 {
         font-size: 1.2rem;
-        margin: 0; }
+        padding-left: 10px; }
       main .contenedorSecciones .seccionPuertas div img, main .contenedorSecciones .seccionTapas div img, main .contenedorSecciones .seccionPortones div img {
         width: 10rem;
         height: 10rem;
@@ -1043,7 +1035,7 @@ main .cuerpoCompra {
         border-radius: 40px;
         margin-top: 5px;
         margin-left: 110px;
-        margin-right: 100px; }
+        margin-right: 120px; }
       footer .grupo-1 div p {
         font-weight: 400;
         margin: 5px; }
@@ -1081,6 +1073,40 @@ main .cuerpoCompra {
   main .importantInformation div {
     width: 9rem;
     height: 10.8rem; } }
+
+@media only screen and (max-width: 320px) {
+  header {
+    padding: 0 20px; }
+    header #nav_check:checked ~ nav {
+      left: 0; }
+    header nav {
+      position: absolute;
+      left: -300px;
+      top: 0;
+      z-index: 999;
+      width: 280px;
+      height: 100vh;
+      background-color: #4C6793;
+      transition: 0.2s;
+      box-shadow: 2px 0 20px 0 rgba(0, 0, 0, 0.05); }
+      header nav .logo img {
+        display: block;
+        height: 7rem;
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        margin-left: 30px;
+        border-radius: 45px; }
+    header nav ul {
+      display: block;
+      padding: 0 20px;
+      margin-top: 30px; }
+      header nav ul li a {
+        margin-bottom: 5px;
+        padding: 10px 15px;
+        border-radius: 5px; }
+    header .hamburguer {
+      display: block; } }
 
 @media only screen and (max-width: 1024px) {
   main .seccionPrincipalTienda {
@@ -1212,6 +1238,7 @@ main .cuerpoCompra {
   main .mediosDePago div {
     width: 9rem; }
   main .containerTienda {
+    max-width: 90%;
     margin-left: 10%; }
     main .containerTienda .ordenarProd {
       display: flex;

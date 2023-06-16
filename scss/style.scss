@@ -1,6 +1,7 @@
 @import "./utilities/variables";
 @import "./base/typo";
 @import "./utilities/mixins";
+@import"./layouts/body";
 @import "./layouts/header-index";
 @import "./layouts/main-index";
 @import "./components/botones";
@@ -20,6 +21,7 @@
 @import "./layouts/media425footer";
 @import "./layouts/media375index";
 @import "./layouts/media320index";
+@import "./layouts/media320header";
 @import "./layouts/media1024tienda";
 @import "./layouts/media768tienda";
 @import "./layouts/media425tienda";
