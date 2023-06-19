@@ -1,9 +1,22 @@
 @media only screen and (max-width: 375px){
     main{
+        .sectionPrincipal{
+            div{
+                .barraNav{
+                    input{
+                        font-size: 12px;
+                    }
+                }
+
+            }
+        }
         .importantInformation{
             div{
-                width: 9rem;
-                height: 10.8rem;
+                width: 11rem;
+                height: 9.3rem;
+                h3{
+                    font-size: 14px;
+                }
             }
         }
     }

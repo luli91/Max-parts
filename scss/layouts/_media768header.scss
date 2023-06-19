@@ -1,9 +1,14 @@
 /*MENÚ HAMBURGUESA*/
 @media only screen and (max-width: 768px){
     header{
+        display: flex;
+        justify-content: flex-end;
         padding: 0 20px;
         #nav_check:checked ~ nav {
             left: 0;
+        }
+        .logo{
+            padding-right: 70%;
         }
         nav{
             position: absolute;
@@ -18,12 +23,12 @@
             .logo{
                 img{
                     display: block;
-                    height: 7rem;
+                    width: auto;
+                    height: 6rem;
                     display: flex;
                     align-items: center;
                     margin-top: 10px;
                     margin-left: 30px;
-                    border-radius: 45px;
                 }
             }
         }
@@ -43,6 +48,7 @@
         }
         .hamburguer {
             display: block;
+            margin-right: 5px;
         }
     }
 }
