@@ -20,8 +20,19 @@ if (!codigoValidoIngresado) {
     alert("Lo siento, has agotado tus intentos. No has obtenido el descuento.");
 }
 
-function agregarAlCarrito(nombre, precio) {
-    // Agregar el producto al carrito
-    // ...
-    alert(nombre + ' ha sido agregado al carrito');
+
+//2do ejemplo
+
+let precioProducto = 1000;
+let descuento = 0.2; 
+
+function calcularTotal() {
+    if (codigoValidoIngresado) {
+    let nuevoPrecio = precioProducto - precioProducto * descuento;
+    alert('Total con descuento: ' + nuevoPrecio);
+    } else {
+    alert('Total sin descuento: ' + precioProducto);
     }
+}
+
+document.querySelector('.botonContinuar').addEventListener('click', calcularTotal);
