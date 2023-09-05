@@ -56,21 +56,22 @@
                     </div>
                     <div class="filtroBusqueda">
                         <div>
-                            <label for=""></label>
-                            <input type="search" placeholder="Marca">
+                            <label for="marca"></label>
+                            <input type="search" id="marca" name="marca" placeholder="Marca">
                         </div>
                         <div>
-                            <label for=""></label>
-                        <input type="search" placeholder="Modelo">
+                            <label for="modelo"></label>
+                            <input type="search" id="modelo" name="modelo" placeholder="Modelo">
                         </div>
                         <div>
-                            <label for=""></label>
-                            <input type="search" placeholder="Año">
+                            <label for="año"></label>
+                            <input type="search" id="año" name="año" placeholder="Año">
                         </div>
                         <div>
-                            <label for=""></label>
-                            <input type="search" placeholder="Versión">
+                            <label for="versión"></label>
+                            <input type="search" id="versión" name="versión" placeholder="Versión">
                         </div>
+                        
                         <div><button>Buscar productos</button></div>
                     </div>
                 </div>
@@ -93,7 +94,7 @@
                     <img src="../assets/img/banco.png" alt="banco">
                 </div>
             </section>
-            <section class="containerTienda">
+            <section class="containerTienda"><!--este es el contenedor donde yo muestro mis productos en mi archivo js -->
                 <div class="filtros"> <!--esta seccion es para los filtros-->
                     <div>
                         <h4>CATEGORIAS</h4>
@@ -129,80 +130,8 @@
                         </ul>
                     </div>
                 </div>
-                <div class="ordenarProd">
-                        <div class="boxProd">
-                            <img src="../assets/img/PuertaDelIzqPeugeot2073p2009.png" alt="puerta">
-                            <h5>Puerta Delantera Izquierda Peugeot 207 3p 2009</h5>
-                            <p>$35.000</p>
-                            <button onclick="agregarAlCarrito('Puerta Delantera Izquierda Peugeot 207 3p 2009', 35.000)"><h6>AGREGAR AL CARRITO</h6></button>
-                        </div>
-                        <div class="boxProd">
-                            <img src="../assets/img/Puerta-del-izq-fiatMobis5p2018.png" alt="puerta">
-                            <h5>Puerta Delantera Izquierda Fiat Mobi 5p 2018</h5>
-                            <p>$41.197</p>
-                            <button><a href="../pages/carrito.html"><h6>AGREGAR AL CARRITO</h6></a></button>
-                        </div>
-                        <div class="boxProd">
-                            <img src="../assets/img/Puerta Del-Izq-Citroenc4-4p2008.png" alt="puerta">
-                            <h5>Puerta Delantera Izquierda Citroen C4 4p 2008</h5>
-                            <p>$42.100</p>
-                            <button><a href="../pages/carrito.html"><h6>AGREGAR AL CARRITO</h6></a></button>
-                        </div>
-                        <div class="boxProd">
-                            <img src="../assets/img/Puerta Del-Izq-Citroenc4-4p2008.png" alt="puerta">
-                            <h5>Puerta Delantera Izquierda Citroen C4 4p 2008</h5>
-                            <p>$42.100</p>
-                            <button><a href="../pages/carrito.html"><h6>AGREGAR AL CARRITO</h6></a></button>
-                        </div>
-                        <div class="boxProd">
-                            <img src="../assets/img/ParagolpeDelFordF100_92-96.png" alt="paragolpe">
-                            <h5>Paragolpe Delantero Ford F100 92/96</h5>
-                            <p>$41.323</p>
-                            <button><a href="../pages/carrito.html"><h6>AGREGAR AL CARRITO</h6></a></button>
-                        </div>
-                        <div class="boxProd">
-                            <img src="../assets/img/ParagolpeDel.chevrolet-s10.png" alt="paragolpe">
-                            <h5>Paragolpe Delantero Chevrolet S10 96/01</h5>
-                            <p>$36.408</p>
-                            <button><a href="../pages/carrito.html"><h6>AGREGAR AL CARRITO</h6></a></button>
-                        </div>
-                        <div class="boxProd">
-                            <img class="boxProdImg" src="../assets/img/Paragolpe-del-VWgolTrend-voyage.png" alt="paragolpe">
-                            <h5 class="boxProdTitulo">Paragolpe Del. Vw Gol Trend-Voyage</h5>
-                            <p>$36.400</p>
-                            <button><a href="../pages/carrito.html"><h6>AGREGAR AL CARRITO</h6></a></button>
-                        </div>
-                        <div class="boxProd">
-                            <img class="boxProdImg" src="../assets/img/Paragolpe-del-VWgolTrend-voyage.png" alt="paragolpe">
-                            <h5 class="boxProdTitulo">Paragolpe Del. Vw Gol Trend-Voyage</h5>
-                            <p>$36.400</p>
-                            <button><a href="../pages/carrito.html"><h6>AGREGAR AL CARRITO</h6></a></button>
-                        </div>
-                        <div class="boxProd">
-                            <img src="../assets/img/tapaDeBaulToyotaCorolla4p2016.png" alt="tapadebaultoyota">
-                            <h5>Tapa De Baul Toyota Corolla 4p 2016</h5>
-                            <p>$70.000</p>
-                            <button><a href="../pages/carrito.html"><h6>AGREGAR AL CARRITO</h6></a></button>
-                        </div>
-                        <div class="boxProd">
-                            <img src="../assets/img/TapaDeBaulCitroenC4-$p2009.png" alt="tapadebaulcitroen">
-                            <h5>Tapa De Baul Citroen C4 4p 2009</h5>
-                            <p>$59.900</p>
-                            <button><a href="../pages/carrito.html"><h6>AGREGAR AL CARRITO</h6></a></button>
-                        </div>
-                        <div class="boxProd">
-                            <img src="../assets/img/TapaDeBaulRenaultMEgane4p2010.png" alt="tapadebaulrenault">
-                            <h5>Tapa De Baul Renault Megane 4p 2010</h5>
-                            <p>$32.368</p>
-                            <button><a href="../pages/carrito.html"><h6>AGREGAR AL CARRITO</h6></a></button>
-                        </div>
-                        <div class="boxProd">
-                            <img src="../assets/img/TapaDeBaulRenaultMEgane4p2010.png" alt="tapadebaulrenault">
-                            <h5>Tapa De Baul Renault Megane 4p 2010</h5>
-                            <p>$32.368</p>
-                            <button><a href="../pages/carrito.html"><h6>AGREGAR AL CARRITO</h6></a></button>
-                        </div>
-                </div>
+                <div class="ordenarProd" id="contenedorProductos"></div><!--este es el contenedor donde yo muestro mis productos en mi archivo js -->
+                <div id="carrito"></div>
             </section>
         </main>
         <footer class="pie-de-pagina">
@@ -248,5 +177,6 @@
         </footer>
     </div>
     <script src="../Javascript/tienda.js"></script>
+    <script src="../Javascript/productos.js"></script>
 </body>
 </html>
