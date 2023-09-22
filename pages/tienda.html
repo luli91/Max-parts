@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
 </head>
 <body>
     <div>
@@ -40,7 +42,9 @@
                 <div class="menu"></div>
             </label>
             <div class="carritoDeCompras">
-                <a href="../pages/carrito.html"> <img src="../assets/img/carrito-compras.png" alt="carrito"></a>
+                <!-- <a href="../pages/carrito.html"> <img src="../assets/img/carrito-compras.png" alt="carrito"></a> -->
+                <!-- Este es el botón que desplegará el carrito -->
+                <button id="ver-carrito">Ver carrito (<span id="contador-carrito">0</span>)</button>
             </div>
         </header>
         <main>
@@ -130,7 +134,12 @@
                         </ul>
                     </div>
                 </div>
-                <div class="ordenarProd" id="contenedorProductos"></div><!--este es el contenedor donde yo muestro mis productos en mi archivo js -->
+                <div class="ordenarProd" id="contenedorProductos"></div><!--este es el contenedor donde yo muestro mis productos en mi archivo js --> 
+                <!-- Este es el div del carrito, que inicialmente está oculto -->
+                <div id="carrito" style="display: none;">
+                <!-- Los productos del carrito se agregarán aquí -->
+                
+                </div>
                 <div id="carrito"></div>
             </section>
         </main>
@@ -176,6 +185,8 @@
             </div>
         </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- <script src="https://sdk.mercadopago.com/js/v2"></script> -->
     <script src="../Javascript/tienda.js"></script>
     <script src="../Javascript/productos.js"></script>
 </body>

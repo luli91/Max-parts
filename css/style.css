@@ -443,10 +443,21 @@ main .containerTienda {
       background-color: #d9d9d988;
       margin-top: 20px;
       width: 95%;
-      height: 500px;
+      height: 550px;
       border-radius: 6px;
       box-shadow: 3px 3px 5px grey;
       transition: all 400ms ease; }
+      main .containerTienda .ordenarProd .boxProd .favorito {
+        margin-left: 85%;
+        margin-top: 5px;
+        border: none;
+        color: gray; }
+        main .containerTienda .ordenarProd .boxProd .favorito img {
+          width: 30px;
+          height: 30px; }
+      main .containerTienda .ordenarProd .boxProd .favorito-activo {
+        /* color cuando es favorito (amarillo) */
+        color: yellow; }
       main .containerTienda .ordenarProd .boxProd img {
         width: 95%;
         padding: 10px;
@@ -461,15 +472,15 @@ main .containerTienda {
         font-weight: 700;
         text-align: center;
         font-size: 25px; }
-      main .containerTienda .ordenarProd .boxProd button {
+      main .containerTienda .ordenarProd .boxProd .botonAgregar, main .containerTienda .ordenarProd .boxProd .botonEliminar {
         height: 40px;
         background-color: #4C6793;
         border: none;
-        margin-left: 25%;
+        margin-left: 20px;
         border-radius: 5px; }
-        main .containerTienda .ordenarProd .boxProd button a {
+        main .containerTienda .ordenarProd .boxProd .botonAgregar a, main .containerTienda .ordenarProd .boxProd .botonEliminar a {
           text-decoration: none; }
-        main .containerTienda .ordenarProd .boxProd button h6 {
+        main .containerTienda .ordenarProd .boxProd .botonAgregar h6, main .containerTienda .ordenarProd .boxProd .botonEliminar h6 {
           color: white;
           font-family: "Lora", serif;
           font-weight: 400;

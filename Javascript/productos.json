@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "nombre": "Puerta Delantera Izquierda Peugeot 207 3p 2009",
+        "precio": 35.999,
+        "imagen": "../assets/img/PuertaDelIzqPeugeot2073p2009.png"
+    },
+    {
+        "id": 2,
+        "nombre": "Puerta Delantera Izquierda Fiat Mobi 5p 2018",
+        "precio": 41.197,
+        "imagen": "../assets/img/Puerta-del-izq-fiatMobis5p2018.png"
+    },
+    {
+        "id": 3,
+        "nombre": "Puerta Delantera Izquierda Citroen C4 4p 2008",
+        "precio": 42.999,
+        "imagen": "../assets/img/PuertaDel-Izq-Citroenc4-4p2008.png"
+    },
+    {
+        "id": 4,
+        "nombre": "Paragolpe Delantero Ford F100 92/96",
+        "precio": 41.323,
+        "imagen": "../assets/img/ParagolpeDelFordF100_92-96.png"
+    },
+    {
+        "id": 5,
+        "nombre": "Paragolpe Delantero Chevrolet S10 96/01",
+        "precio": 36.408,
+        "imagen": "../assets/img/ParagolpeDel.chevrolet-s10.png"
+    },
+    {
+        "id": 6,
+        "nombre": "Paragolpe Del. Vw Gol Trend-Voyage",
+        "precio": 36.405,
+        "imagen": "../assets/img/Paragolpe-del-VWgolTrend-voyage.png"
+    },
+    {
+        "id": 7,
+        "nombre": "Tapa De Baul Toyota Corolla 4p 2016",
+        "precio": 70.719,
+        "imagen": "../assets/img/TapaDeBaulToyotaCorolla4p2016.png"
+    },
+    {
+        "id": 8,
+        "nombre": "Tapa De Baul Citroen C4 4p 2009",
+        "precio": 59.548,
+        "imagen": "../assets/img/TapaDeBaulCitroenC4-$p2009.png"
+    }
+]
+
