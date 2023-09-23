@@ -1,14 +1,15 @@
-const productos = [
-    {id:1, nombre:"Puerta Delantera Izquierda Peugeot 207 3p 2009" , precio: 35.999 , imagen:"../assets/img/PuertaDelIzqPeugeot2073p2009.png" },
-    {id:2, nombre:"Puerta Delantera Izquierda Fiat Mobi 5p 2018" , precio: 41.197 , imagen:"../assets/img/Puerta-del-izq-fiatMobis5p2018.png"},
-    {id:3, nombre:"Puerta Delantera Izquierda Citroen C4 4p 2008" , precio: 42.999 , imagen:"../assets/img/PuertaDel-Izq-Citroenc4-4p2008.png"},
-    {id:4, nombre:"Paragolpe Delantero Ford F100 92/96" , precio: 41.323 , imagen:"../assets/img/ParagolpeDelFordF100_92-96.png"},
-    {id:5, nombre:"Paragolpe Delantero Chevrolet S10 96/01" , precio: 36.408 , imagen:"../assets/img/ParagolpeDel.chevrolet-s10.png"},
-    {id:6, nombre:"Paragolpe Del. Vw Gol Trend-Voyage" , precio: 36.405 , imagen:"../assets/img/Paragolpe-del-VWgolTrend-voyage.png" },
-    {id:7, nombre:"Tapa De Baul Toyota Corolla 4p 2016" , precio: 70.719 , imagen:"../assets/img/TapaDeBaulToyotaCorolla4p2016.png"},
-    {id:8, nombre:"Tapa De Baul Citroen C4 4p 2009" , precio: 59.548 , imagen:"../assets/img/TapaDeBaulCitroenC4-$p2009.png"},
-    {id:9, nombre:"Tapa De Baul Renault Megane 4p 2010" , precio: 32.168 , imagen:"../assets/img/TapaDeBaulRenaultMEgane4p2010.png"},
-    ];
+// const productos = [
+//     {id:1, nombre:"Puerta Delantera Izquierda Peugeot 207 3p 2009" , precio: 35.999 , imagen:"../assets/img/PuertaDelIzqPeugeot2073p2009.png" },
+//     {id:2, nombre:"Puerta Delantera Izquierda Fiat Mobi 5p 2018" , precio: 41.197 , imagen:"../assets/img/Puerta-del-izq-fiatMobis5p2018.png"},
+//     {id:3, nombre:"Puerta Delantera Izquierda Citroen C4 4p 2008" , precio: 42.999 , imagen:"../assets/img/PuertaDel-Izq-Citroenc4-4p2008.png"},
+//     {id:4, nombre:"Paragolpe Delantero Ford F100 92/96" , precio: 41.323 , imagen:"../assets/img/ParagolpeDelFordF100_92-96.png"},
+//     {id:5, nombre:"Paragolpe Delantero Chevrolet S10 96/01" , precio: 36.408 , imagen:"../assets/img/ParagolpeDel.chevrolet-s10.png"},
+//     {id:6, nombre:"Paragolpe Del. Vw Gol Trend-Voyage" , precio: 36.405 , imagen:"../assets/img/Paragolpe-del-VWgolTrend-voyage.png" },
+//     {id:7, nombre:"Tapa De Baul Toyota Corolla 4p 2016" , precio: 70.719 , imagen:"../assets/img/TapaDeBaulToyotaCorolla4p2016.png"},
+//     {id:8, nombre:"Tapa De Baul Citroen C4 4p 2009" , precio: 59.548 , imagen:"../assets/img/TapaDeBaulCitroenC4-$p2009.png"},
+//     {id:9, nombre:"Tapa De Baul Renault Megane 4p 2010" , precio: 32.168 , imagen:"../assets/img/TapaDeBaulRenaultMEgane4p2010.png"},
+//     ];
+
 
 //funcion para que al hacer click ,en el evento de la linea 39, el id con el objeto se guarde en el local storage 
 const agregar = (id) =>{
@@ -18,14 +19,12 @@ const agregar = (id) =>{
     let productosEnCarrito = JSON.parse(localStorage.getItem("productosEnCarrito")) || [];
      // Busco el producto con el ID especificado
     let producto = productos.find((item) => item.id === id);
-    // Agrego el producto a la lista de productos
-    productosEnCarrito.push(producto);
-    // Guardo la lista de productos en el almacenamiento local
-    //Para guardar objetos y arreglos en el local storage se debe si o si convertir dicho objeto y arreglo a json con stringfy porque al convertirlo en string pesa menos ya que el almacenamiento local es muy pequeño.
-    localStorage.setItem("productosEnCarrito", JSON.stringify(productosEnCarrito));
-    // Actualiza el contador en el botón "Ver carrito"
-    document.getElementById('contador-carrito').textContent = productosEnCarrito.length;
-    
+     // Comprobamos si el producto existe
+        if (producto) {
+        productosEnCarrito.push(producto);
+        localStorage.setItem("productosEnCarrito", JSON.stringify(productosEnCarrito));
+        document.getElementById('contador-carrito').textContent = productosEnCarrito.length;
+        
     // Genera el HTML para los productos en el carrito( aca se ven los productos seleccionados)
     let htmlDelCarrito = '';
     let totalDelCarrito = 0;
@@ -33,10 +32,14 @@ const agregar = (id) =>{
         htmlDelCarrito += `<p><img src="${producto.imagen}" alt="${producto.nombre}"style="width: 50px; height: 50px;">${producto.nombre}: $${producto.precio}</p>`;
         totalDelCarrito += producto.precio;
     }
-    htmlDelCarrito += `<p> Total a pagar: <span id="total-amount">${totalDelCarrito}</span> $</p>
-        <button id="checkout-btn"> COMPRAR</button>
-        <div id="button-checkout"></div>`
-        let carritoDiv = document.getElementById('carrito');
+
+    htmlDelCarrito += `
+    <input type="text" id="codigo-postal-input" placeholder="Ingresa tu código postal">
+    <button id="calcular-envio-boton">Calcular envío</button>
+    <p> Total a pagar: <span id="total-amount">${totalDelCarrito}</span> $</p>
+    <button id="checkout-btn"> COMPRAR</button>
+    <div id="button-checkout"></div>`
+    let carritoDiv = document.getElementById('carrito');
         carritoDiv.style.backgroundColor = "#071E3D";
         carritoDiv.style.color = "white";
         carritoDiv.style.fontFamily = "'Lora', serif";
@@ -51,7 +54,10 @@ const agregar = (id) =>{
         '¡Agregaste  el producto al carrito!',
         'success'
     );
+} else {
+    console.log(`No se encontró ningún producto con el ID ${id}`);
 }
+};
 
 //funcion para eliminar del lcoal storage
 // const eliminar = (id) => {
@@ -69,12 +75,14 @@ const agregar = (id) =>{
 
 const favorito = (id) =>{
 //productos.forEach = ((item) =>{
-    // let botonFavorito = document.getElementById(`favoritos${item.id}`);
-    // botonFavorito.addEventListener("click", () => {
+    //let botonFavorito = document.getElementById(`favoritos${item.id}`);
+    //botonFavorito.addEventListener("click", () => {
         // Obtener la lista de productos favoritos del almacenamiento local
         let productosFavoritos = JSON.parse(localStorage.getItem("productosFavoritos")) || [];
         //console.log("Productos favoritos:", productosFavoritos);
         // Buscar el índice del producto en la lista de productos favoritos
+         // Elimina cualquier elemento null de productosFavoritos
+        productosFavoritos = productosFavoritos.filter(item => item !== null);
         let index = productosFavoritos.findIndex((item) => item.id === id);
         let botonFavorito = document.getElementById(`favoritos${id}`);
         // Si el producto ya está en la lista de favoritos, eliminarlo
@@ -82,17 +90,27 @@ const favorito = (id) =>{
             productosFavoritos.splice(index, 1);
             botonFavorito.classList.remove('favorito-activo');
         } else {
-            // Si el producto no está en la lista de favoritos, agregarlo
             let productoSeleccionado = productos.find((item) => item.id === id);
-            productosFavoritos.push(productoSeleccionado);
-            botonFavorito.classList.add('favorito-activo');
-        }
-        // Guardo la lista de productos favoritos actualizada en el almacenamiento local
-        localStorage.setItem("productosFavoritos", JSON.stringify(productosFavoritos));
-    }
+
+            console.log("Producto seleccionado para favorito:", productoSeleccionado);
     
-//mostramos los productos en el DOM
-productos.forEach((item) => {
+            if (productoSeleccionado) {
+                productosFavoritos.push(productoSeleccionado);
+                botonFavorito.classList.add('favorito-activo');
+            } else {
+                console.log(`No se encontró ningún producto con el ID ${id}`);
+            }
+        }
+        localStorage.setItem("productosFavoritos", JSON.stringify(productosFavoritos));
+    };
+
+    let productos = []; 
+
+    fetch("http://127.0.0.1:5500/Javascript/productos.json")
+    .then((response) => response.json())
+    .then((data) => {
+        productos = data;  // Aquí actualizas 'productos' con los datos obtenidos
+        data.forEach((item) => {
     let div= document.createElement("div");
     div.innerHTML = `
     <div class="boxProd">
@@ -114,7 +132,7 @@ productos.forEach((item) => {
     let botonfavorito = document.getElementById(`favoritos${item.id}`);
     botonfavorito.addEventListener("click", () => favorito(item.id));
 });
-    
+});
 //este codigo es para que al apretar el boton ver carrito se vean los productos que seleccione
 document.getElementById('ver-carrito').addEventListener('click', () => {
     let carrito = document.getElementById('carrito');
