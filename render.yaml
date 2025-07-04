@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: maxparts-tienda
+    env: node
+    plan: free
+    branch: master
+    rootDir: .
+    buildCommand: npm install && npm run build-css
+    startCommand: node server/server.js
