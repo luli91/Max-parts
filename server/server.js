@@ -12,13 +12,15 @@ mercadopago.configure({
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-app.use(express.static(path.join(__dirname,"../pages")));
-app.use(express.static(path.join(__dirname,"../Javascript")));
+app.use(express.static(path.join(__dirname, "../pages")));
+app.use("/Javascript", express.static(path.join(__dirname, "../Javascript")));
+app.use("/css", express.static(path.join(__dirname, "../css")));
+app.use("/assets", express.static(path.join(__dirname, "../assets")));
 app.use(cors());
 app.get("/", function (req, res) {
-	path.resolve(__dirname, "..", "pages", "tienda.html");
-	path.resolve(__dirname, "..", "Javascript", "productos.js");
+  res.sendFile(path.resolve(__dirname, "..", "pages", "tienda.html"));
 });
+
 
 app.post("/create_preference", (req, res) => {
 

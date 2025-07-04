@@ -106,7 +106,7 @@ const favorito = (id) =>{
 
     let productos = []; 
 
-    fetch("http://127.0.0.1:5500/Javascript/productos.json")
+    fetch("/Javascript/productos.json")
     .then((response) => response.json())
     .then((data) => {
         productos = data;  // Aquí actualizas 'productos' con los datos obtenidos
