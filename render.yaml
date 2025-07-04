@@ -4,6 +4,6 @@ services:
     env: node
     plan: free
     branch: master
-    rootDir: .
+    rootDir: server
     buildCommand: npm install && npm run build-css
-    startCommand: node server/server.js
+    startCommand: node server.js
