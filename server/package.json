@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "npx sass ../scss/style.scss ../css/style.css",
+    "build-css": "sass ../scss/style.scss ../css/style.css",
     "watch-css": "sass --watch ./scss/style.scss ./css/style.css"
   },
   "repository": {
@@ -20,12 +20,12 @@
   },
   "homepage": "https://github.com/luli91/Desarrolloweb-54530#readme",
   "devDependencies": {
-    "nodemon": "^2.0.22"
+    "nodemon": "^2.0.22",
+    "sass": "^1.89.2"
   },
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.18.2",
-    "mercadopago": "^1.5.17",
-    "sass": "^1.89.2"
+    "mercadopago": "^1.5.17"
   }
 }
